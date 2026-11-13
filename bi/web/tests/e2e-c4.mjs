@@ -46,6 +46,29 @@ ok('C4 multi-level SKU back', 'store URL with returnTo restored')
 await page.locator('a.back-link').click()
 await page.waitForURL('**/cities-stores?city=3**')
 await cityList.locator('tbody tr').first().waitFor()
+await page.waitForFunction(
+  () => {
+    const valueOf = (label) => {
+      const field = [...document.querySelectorAll('.filter-field')].find((node) =>
+        node.textContent?.includes(label)
+      )
+      return field?.querySelector('select')?.value
+    }
+    const card = [...document.querySelectorAll('.card')].find((node) =>
+      [...node.querySelectorAll('h1,h2,h3,h4')].some(
+        (h) => h.textContent?.trim() === '门店列表'
+      )
+    )
+    const pager = card?.querySelector('.pager')?.textContent ?? ''
+    return (
+      valueOf('城市') === '3' &&
+      valueOf('风险域') === 'stockout_domain' &&
+      valueOf('样本') === 'risk' &&
+      pager.includes('第 2 页')
+    )
+  },
+  { timeout: 15000 }
+)
 await need((await selectValue(page, '城市')) === '3', 'city restored')
 await need((await selectValue(page, '风险域')) === 'stockout_domain', 'risk restored')
 await need((await selectValue(page, '样本')) === 'risk', 'scope restored')
