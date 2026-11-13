@@ -1,0 +1,33 @@
+# 数据来源与许可声明
+
+## FreshRetailNet-50K
+
+- 数据集：FreshRetailNet-50K
+- 发布方：Dingdong-Inc（叮咚买菜）
+- 官方地址：https://huggingface.co/datasets/Dingdong-Inc/FreshRetailNet-50K
+- 论文：https://arxiv.org/abs/2505.16319
+- 许可证：Creative Commons Attribution 4.0 International（CC BY 4.0）
+- 许可核实：Hugging Face 数据集卡片 `cardData.license = "cc-by-4.0"`（2026-11-13 核实）
+
+数据集包含 898 家门店、18 个城市、865 个 SKU、50,000 条门店×商品 90 天序列；原始文件为
+`train.parquet`（4,500,000 行）与 `eval.parquet`（350,000 行）。
+
+## 本仓库对数据的使用
+
+- 本仓库**不重新分发原始数据**；原始数据需从上述官方地址下载。
+- 本仓库包含基于原始数据计算得到的派生聚合表、分析结果 CSV 和图表。
+- 本项目对数据进行了清洗、聚合、指标计算、风险筛查与可视化；这些修改由本项目完成，不代表原始发布方的观点。
+- 原始数据的著作权与许可归 Dingdong-Inc 及数据集作者所有；派生结果的使用需保留本声明和 CC BY 4.0 署名。
+
+## 建议引用
+
+```text
+Wang, Y., Gu, J., Long, L., Li, X., Shen, L., Fu, Z., Zhou, X., & Jiang, X. (2025).
+FreshRetailNet-50K: A Stockout-Annotated Censored Demand Dataset for Latent Demand
+Recovery and Forecasting in Fresh Retail. arXiv:2505.16319.
+Dataset: https://huggingface.co/datasets/Dingdong-Inc/FreshRetailNet-50K (CC BY 4.0).
+```
+
+## 代码许可
+
+本项目代码使用 MIT License，见 `LICENSE`。数据与代码的许可相互独立；使用数据时以 CC BY 4.0 为准。

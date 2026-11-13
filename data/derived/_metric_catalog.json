@@ -1,0 +1,116 @@
+{
+  "metrics": [
+    {
+      "id": "M1-01",
+      "name": "样本总销量指数",
+      "formula": "SUM(sales_index) BY dt",
+      "fields": "sale_amount",
+      "grain": "日",
+      "note": "样本内 50k 序列合计"
+    },
+    {
+      "id": "M1-02",
+      "name": "单店日均销量指数",
+      "formula": "SUM(sales_index)/COUNT(DISTINCT store_id)",
+      "fields": "sale_amount,store_id",
+      "grain": "日",
+      "note": "横向对比主指标"
+    },
+    {
+      "id": "M1-03",
+      "name": "单序列日均销量指数",
+      "formula": "SUM(sales_index)/COUNT(*)",
+      "fields": "sale_amount",
+      "grain": "序列",
+      "note": "商品/门店对对比"
+    },
+    {
+      "id": "M1-04",
+      "name": "日环比",
+      "formula": "x_t/x_{t-1}-1",
+      "fields": "sale_amount",
+      "grain": "日",
+      "note": "需处理零值"
+    },
+    {
+      "id": "M1-07",
+      "name": "小时销量份额",
+      "formula": "SUM(hours_sale[h])/SUM(hours_sale)",
+      "fields": "hours_sale",
+      "grain": "小时",
+      "note": "0-23"
+    },
+    {
+      "id": "M1-10",
+      "name": "星期效应",
+      "formula": "均值(某星期)/均值(全期)",
+      "fields": "dt,sale_amount",
+      "grain": "星期",
+      "note": "周一=0"
+    },
+    {
+      "id": "M4-03",
+      "name": "SKU 单店日均销量指数",
+      "formula": "SUM(sales_index)/COUNT(*)",
+      "fields": "sale_amount,product_id",
+      "grain": "SKU",
+      "note": "受覆盖门店数影响，需同时报告 store_count"
+    },
+    {
+      "id": "M4-04",
+      "name": "SKU 动销率",
+      "formula": "AVG(sales_index>0)",
+      "fields": "sale_amount,dt",
+      "grain": "SKU-门店",
+      "note": "零销可能因缺货"
+    },
+    {
+      "id": "M4-06",
+      "name": "SKU 缺货天数占比",
+      "formula": "AVG(stockout_day_flag)",
+      "fields": "stock_hour6_22_cnt",
+      "grain": "SKU-门店",
+      "note": "分母为 90 天"
+    },
+    {
+      "id": "M4-10",
+      "name": "促销日销量比",
+      "formula": "促销日均值/非促销日均值（同店同 SKU）",
+      "fields": "discount,sale_amount",
+      "grain": "序列",
+      "note": "仅关联，不称弹性"
+    },
+    {
+      "id": "M5-03",
+      "name": "城市单店日均销量指数",
+      "formula": "SUM/门店-日数",
+      "fields": "city_id,sale_amount",
+      "grain": "城市",
+      "note": "必须同时报告门店数"
+    },
+    {
+      "id": "M5-07",
+      "name": "城市缺货率（SKU-日口径）",
+      "formula": "AVG(stockout_day_flag)",
+      "fields": "stock_hour6_22_cnt",
+      "grain": "城市",
+      "note": "6-21 点口径；另保留门店日任一缺货率"
+    },
+    {
+      "id": "M6-01",
+      "name": "缺货日销量差异",
+      "formula": "同店同 SKU 缺货日/非缺货日均值",
+      "fields": "stock_hour6_22_cnt,sale_amount",
+      "grain": "序列-日",
+      "note": "差异不等于因果"
+    },
+    {
+      "id": "M6-03",
+      "name": "缺货销量变化区间",
+      "formula": "以非缺货日均值为基准的比值区间",
+      "fields": "stock_hour6_22_cnt,sale_amount",
+      "grain": "序列-日",
+      "note": "不提供点估计或金额损失"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+﻿field,grain,source,definition,n_scope
+store_id,门店,P3-D d1,匿名门店 ID,898
+city_id,门店,P3-D d1,匿名城市 ID,898
+profile_status,门店,P3-D d1.in_risk_sample,完整档案 / 基础档案（SKU<10）,898
+total_index,门店,P1/P3-B,90 天归一化销量指数合计,898
+per_day_index,门店,P1/P3-B,total_index / 90,898
+sku_count,门店,P1/P3-B,90 天去重 SKU 数,898
+per_sku_day_index,门店,P1/P3-B,per_day_index / sku_count,898
+cv,门店,P3-B,门店日指数总体标准差 / 均值,898
+zero_rate,门店,P3-B,零销 SKU-日 / 门店 SKU-日,898
+promo_rate,门店,P1/P3-B,促销 SKU-日 / 门店 SKU-日,898
+stockout_sku_day_rate,门店,P3-B,有缺货 SKU-日 / 门店 SKU-日,898
+stockout_hour_rate,门店,P3-B,缺货小时 / (16×门店 SKU-日),898
+store_day_any_stockout_rate,门店,P1/P3-B,至少 1 个 SKU 缺货的门店-日 / 90；饱和，仅背景,898
+eff_resid,门店,P3-B,log-log Huber 残差；相对统计偏离,888
+rlm_weight,门店,P3-B,Huber 最终权重,888
+high_influence,门店,P3-B,RLM 权重 <0.5,888
+quadrant,门店,P3-B,规模 P50 × 效率 P50 四象限,888
+in_model,门店,P3-B,SKU≥10,898
+sku_hhi,门店,P3-C,Σ 门店内 SKU 销量份额²,898
+top1_sku_share,门店,P3-C,最大 SKU 份额,898
+top5_sku_share,门店,P3-C,前 5 SKU 份额,898
+cat_hhi,门店,P3-C,Σ 一级类别份额²,898
+cat_entropy,门店,P3-C,类别熵,898
+n_cat,门店,P3-C,一级类别数,898
+top_cat_share,门店,P3-C,最大类别份额,898
+effective_sku,门店,P3-C,1 / sku_hhi,898
+structure_valid,门店,P3-C,SKU≥10，结构指标有效,898
+cluster,门店,P3-C c8,G1–G4 结构相似群；非业态,888
+R1–R8,门店,P3-D,冻结风险标记,888 / 10 NA
+stockout_domain,门店,P3-D,R1 或 R2,888
+domain_count,门店,P3-D,5 个运营域计数,888
+multi_risk,门店,P3-D,domain_count ≥2,888
+low_run_max_days,门店,P3-D,P1 规则复算真实最长连续低销天数,898
+max_low_run_days,门店,P1/P3-B,P1 截断字段；未达 7 天记为 0,898
+in_risk_sample,门店,P3-D,是否进入 888 风险样本,898

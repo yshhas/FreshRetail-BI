@@ -1,0 +1,103 @@
+{
+  "days": 90,
+  "total_index_sum": 4493660.787000001,
+  "daily_mean": 49929.56430000001,
+  "daily_median": 47997.874000000105,
+  "daily_cv": 0.17576041012364568,
+  "first30_mean": 44106.197333333366,
+  "last30_mean": 53984.51870000005,
+  "last30_vs_first30_pct": 22.396674308626284,
+  "peak_date": "2024-05-12",
+  "peak_value": 72938.82500000007,
+  "low_date": "2024-03-29",
+  "low_value": 34893.47600000015,
+  "peak_low_ratio": 2.090328432741976,
+  "weekend_uplift_pct": 29.164302805126,
+  "best_weekday": "周日",
+  "worst_weekday": "周四",
+  "holiday_days": 31,
+  "holiday_weekdays": 6,
+  "holiday_overall_uplift_pct": 26.880301144768183,
+  "holiday_weekday_only_uplift_pct": 6.858676894437221,
+  "peak_hours": [
+    {
+      "hour": 9,
+      "share_pct": 10.698720326030548
+    },
+    {
+      "hour": 10,
+      "share_pct": 9.927217944261086
+    },
+    {
+      "hour": 8,
+      "share_pct": 9.28116561908169
+    }
+  ],
+  "trough_hour_6_22": 22,
+  "trough_share_pct": 1.047934017100694,
+  "overnight_0_5_share_pct": 3.1461186480552534,
+  "periods": [
+    {
+      "period": "凌晨 0-5",
+      "share_pct": 3.146118648055253,
+      "cum_share_pct": 3.146118648055253
+    },
+    {
+      "period": "早市 6-8",
+      "share_pct": 18.424695125974377,
+      "cum_share_pct": 21.57081377402963
+    },
+    {
+      "period": "上午 9-11",
+      "share_pct": 27.77900823342482,
+      "cum_share_pct": 49.34982200745445
+    },
+    {
+      "period": "午间 12-13",
+      "share_pct": 10.466239493619122,
+      "cum_share_pct": 59.81606150107357
+    },
+    {
+      "period": "下午 14-16",
+      "share_pct": 21.636468484949415,
+      "cum_share_pct": 81.45252998602298
+    },
+    {
+      "period": "傍晚 17-19",
+      "share_pct": 12.786634644537537,
+      "cum_share_pct": 94.23916463056052
+    },
+    {
+      "period": "夜间 20-23",
+      "share_pct": 5.760835369439464,
+      "cum_share_pct": 99.99999999999999
+    }
+  ],
+  "store": {
+    "n_stores": 898,
+    "mean": 55.60085111358573,
+    "median": 49.42671666666667,
+    "p10": 15.838799999999997,
+    "p25": 30.755166666666664,
+    "p75": 74.92194166666665,
+    "p90": 103.94665555555558,
+    "min": 0.5677777777777778,
+    "max": 194.56144444444442,
+    "p90_p10_ratio": 6.562786041591257,
+    "cv_of_store_means": 0.6238531704271173,
+    "top10pct_share_of_total_pct": 23.021353480725022,
+    "top20pct_share_of_total_pct": 39.62458406186769,
+    "per_sku_median": 0.9553002238840418,
+    "per_sku_p10": 0.7061287187666135,
+    "per_sku_p90": 1.2672837169064,
+    "per_sku_p90_p10_ratio": 1.7946922186084557,
+    "spearman_scale_vs_product_count": 0.9611431773778483,
+    "spearman_efficiency_vs_product_count": 0.25188265780981595,
+    "spearman_rank_scale_vs_efficiency": 0.485523874149735
+  },
+  "anomaly_days": 1,
+  "store_cross_anomalies": 20,
+  "store_day_anomaly_rows": 1354,
+  "stores_with_store_day_anomaly": 533,
+  "sustained_low_stores": 92
+}

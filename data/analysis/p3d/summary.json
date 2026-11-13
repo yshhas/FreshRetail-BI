@@ -1,0 +1,1159 @@
+{
+  "n_all": 898,
+  "n_risk": 888,
+  "risk_sample_rule": "SKU coverage >= 10 (structure_valid=True)",
+  "thresholds": {
+    "R1": 0.4855318710740397,
+    "R2": 0.2233611111111111,
+    "R4": 0.09165656565656577,
+    "R5": 0.2987298216965301,
+    "R6": 0.0444444444444444,
+    "R7": 20.0
+  },
+  "threshold_table": [
+    {
+      "flag": "R1",
+      "dimension": "缺货广度",
+      "metric": "stockout_sku_day_rate",
+      "threshold_label": "P90",
+      "threshold": 0.4855318710740397,
+      "comparator": ">",
+      "n_sample": 888,
+      "hits": 89
+    },
+    {
+      "flag": "R2",
+      "dimension": "缺货强度",
+      "metric": "stockout_hour_rate",
+      "threshold_label": "P90",
+      "threshold": 0.2233611111111111,
+      "comparator": ">",
+      "n_sample": 888,
+      "hits": 89
+    },
+    {
+      "flag": "R3",
+      "dimension": "持续低销",
+      "metric": "max_low_run_days",
+      "threshold_label": "≥7",
+      "threshold": 7.0,
+      "comparator": ">=",
+      "n_sample": 888,
+      "hits": 90
+    },
+    {
+      "flag": "R4",
+      "dimension": "高零销",
+      "metric": "zero_rate",
+      "threshold_label": "P90",
+      "threshold": 0.09165656565656577,
+      "comparator": ">",
+      "n_sample": 888,
+      "hits": 89
+    },
+    {
+      "flag": "R5",
+      "dimension": "高波动",
+      "metric": "cv",
+      "threshold_label": "P90",
+      "threshold": 0.2987298216965301,
+      "comparator": ">",
+      "n_sample": 888,
+      "hits": 89
+    },
+    {
+      "flag": "R6",
+      "dimension": "高异常日",
+      "metric": "anomaly_rate",
+      "threshold_label": "P90",
+      "threshold": 0.0444444444444444,
+      "comparator": ">",
+      "n_sample": 888,
+      "hits": 56
+    },
+    {
+      "flag": "R7",
+      "dimension": "覆盖偏窄",
+      "metric": "sku_count",
+      "threshold_label": "P10",
+      "threshold": 20.0,
+      "comparator": "<=",
+      "n_sample": 888,
+      "hits": 93
+    },
+    {
+      "flag": "R8",
+      "dimension": "结构集中",
+      "metric": "sku_hhi",
+      "threshold_label": "decile1_P90",
+      "threshold": 0.2159420749202445,
+      "comparator": ">",
+      "n_sample": 89,
+      "hits": 9
+    },
+    {
+      "flag": "R8",
+      "dimension": "结构集中",
+      "metric": "sku_hhi",
+      "threshold_label": "decile2_P90",
+      "threshold": 0.2046829603909535,
+      "comparator": ">",
+      "n_sample": 89,
+      "hits": 9
+    },
+    {
+      "flag": "R8",
+      "dimension": "结构集中",
+      "metric": "sku_hhi",
+      "threshold_label": "decile3_P90",
+      "threshold": 0.17608813718496436,
+      "comparator": ">",
+      "n_sample": 89,
+      "hits": 9
+    },
+    {
+      "flag": "R8",
+      "dimension": "结构集中",
+      "metric": "sku_hhi",
+      "threshold_label": "decile4_P90",
+      "threshold": 0.12973234080055615,
+      "comparator": ">",
+      "n_sample": 89,
+      "hits": 9
+    },
+    {
+      "flag": "R8",
+      "dimension": "结构集中",
+      "metric": "sku_hhi",
+      "threshold_label": "decile5_P90",
+      "threshold": 0.10929155569294392,
+      "comparator": ">",
+      "n_sample": 89,
+      "hits": 9
+    },
+    {
+      "flag": "R8",
+      "dimension": "结构集中",
+      "metric": "sku_hhi",
+      "threshold_label": "decile6_P90",
+      "threshold": 0.07821737653517588,
+      "comparator": ">",
+      "n_sample": 89,
+      "hits": 9
+    },
+    {
+      "flag": "R8",
+      "dimension": "结构集中",
+      "metric": "sku_hhi",
+      "threshold_label": "decile7_P90",
+      "threshold": 0.029767174150634304,
+      "comparator": ">",
+      "n_sample": 89,
+      "hits": 9
+    },
+    {
+      "flag": "R8",
+      "dimension": "结构集中",
+      "metric": "sku_hhi",
+      "threshold_label": "decile8_P90",
+      "threshold": 0.024002449071716683,
+      "comparator": ">",
+      "n_sample": 89,
+      "hits": 9
+    },
+    {
+      "flag": "R8",
+      "dimension": "结构集中",
+      "metric": "sku_hhi",
+      "threshold_label": "decile9_P90",
+      "threshold": 0.021132319194108688,
+      "comparator": ">",
+      "n_sample": 88,
+      "hits": 9
+    },
+    {
+      "flag": "R8",
+      "dimension": "结构集中",
+      "metric": "sku_hhi",
+      "threshold_label": "decile10_P90",
+      "threshold": 0.01901886465855479,
+      "comparator": ">",
+      "n_sample": 88,
+      "hits": 9
+    }
+  ],
+  "flag_counts": {
+    "R1": 89,
+    "R2": 89,
+    "R3": 90,
+    "R4": 89,
+    "R5": 89,
+    "R6": 56,
+    "R7": 93,
+    "R8": 90
+  },
+  "domain_counts": [
+    {
+      "domain_count": 0,
+      "stores": 581
+    },
+    {
+      "domain_count": 1,
+      "stores": 175
+    },
+    {
+      "domain_count": 2,
+      "stores": 101
+    },
+    {
+      "domain_count": 3,
+      "stores": 25
+    },
+    {
+      "domain_count": 4,
+      "stores": 4
+    },
+    {
+      "domain_count": 5,
+      "stores": 2
+    }
+  ],
+  "multi_risk": 132,
+  "multi_risk_rate": 0.14864864864864866,
+  "r1_r2_overlap": 24,
+  "r1_r2_union": 154,
+  "r1_r2_cross": [
+    {
+      "R1": true,
+      "R2": true,
+      "stores": 24
+    },
+    {
+      "R1": true,
+      "R2": false,
+      "stores": 65
+    },
+    {
+      "R1": false,
+      "R2": true,
+      "stores": 65
+    },
+    {
+      "R1": false,
+      "R2": false,
+      "stores": 734
+    }
+  ],
+  "relations": [
+    {
+      "relation": "r1_vs_r2",
+      "x": "stockout_sku_day_rate",
+      "y": "stockout_hour_rate",
+      "n": 888,
+      "spearman": 0.37715132236959825,
+      "ci_low": 0.3164746271650489,
+      "ci_high": 0.44234097860217003,
+      "city_boot_low": 0.08576492590857208,
+      "city_boot_high": 0.6591513049187432
+    },
+    {
+      "relation": "r1_vs_per_day",
+      "x": "stockout_sku_day_rate",
+      "y": "per_day_index",
+      "n": 888,
+      "spearman": -0.029403296347274743,
+      "ci_low": -0.09730790923738983,
+      "ci_high": 0.036244531519451784,
+      "city_boot_low": -0.2927857340447326,
+      "city_boot_high": 0.22231324174324235
+    },
+    {
+      "relation": "r2_vs_per_day",
+      "x": "stockout_hour_rate",
+      "y": "per_day_index",
+      "n": 888,
+      "spearman": -0.5287551512964487,
+      "ci_low": -0.5751876025778624,
+      "ci_high": -0.47663757812090074,
+      "city_boot_low": -0.6429463889423394,
+      "city_boot_high": -0.14283387455268703
+    },
+    {
+      "relation": "r1_vs_zero",
+      "x": "stockout_sku_day_rate",
+      "y": "zero_rate",
+      "n": 888,
+      "spearman": -0.02207179204844162,
+      "ci_low": -0.0898600320985946,
+      "ci_high": 0.04964929926083341,
+      "city_boot_low": -0.3892404665912287,
+      "city_boot_high": 0.29462355290387665
+    },
+    {
+      "relation": "r2_vs_zero",
+      "x": "stockout_hour_rate",
+      "y": "zero_rate",
+      "n": 888,
+      "spearman": 0.7077322370744897,
+      "ci_low": 0.6692139761037503,
+      "ci_high": 0.7426129874477684,
+      "city_boot_low": 0.4189365233562202,
+      "city_boot_high": 0.7998524806437204
+    },
+    {
+      "relation": "r1_vs_cv",
+      "x": "stockout_sku_day_rate",
+      "y": "cv",
+      "n": 888,
+      "spearman": 0.176579626480019,
+      "ci_low": 0.11232220683774696,
+      "ci_high": 0.24117887437872707,
+      "city_boot_low": -0.021570284536792748,
+      "city_boot_high": 0.3545860245506711
+    },
+    {
+      "relation": "r2_vs_cv",
+      "x": "stockout_hour_rate",
+      "y": "cv",
+      "n": 888,
+      "spearman": 0.4216943773282714,
+      "ci_low": 0.36841833491169496,
+      "ci_high": 0.47569837294230144,
+      "city_boot_low": 0.038865725073729034,
+      "city_boot_high": 0.5153395531098178
+    },
+    {
+      "relation": "r1_vs_sku",
+      "x": "stockout_sku_day_rate",
+      "y": "sku_count",
+      "n": 888,
+      "spearman": -0.09378373728044741,
+      "ci_low": -0.16104117610897722,
+      "ci_high": -0.026684238932923102,
+      "city_boot_low": -0.33677945858332475,
+      "city_boot_high": 0.1338216327268748
+    },
+    {
+      "relation": "r2_vs_sku",
+      "x": "stockout_hour_rate",
+      "y": "sku_count",
+      "n": 888,
+      "spearman": -0.5102680787138427,
+      "ci_low": -0.5562618827240735,
+      "ci_high": -0.45954800453474703,
+      "city_boot_low": -0.6142130737554905,
+      "city_boot_high": -0.1337016692036827
+    },
+    {
+      "relation": "r1_vs_eff",
+      "x": "stockout_sku_day_rate",
+      "y": "eff_resid",
+      "n": 888,
+      "spearman": 0.3098146572625158,
+      "ci_low": 0.24143172953435346,
+      "ci_high": 0.3728093423938403,
+      "city_boot_low": -0.022852772654667397,
+      "city_boot_high": 0.49208250242502416
+    },
+    {
+      "relation": "r2_vs_eff",
+      "x": "stockout_hour_rate",
+      "y": "eff_resid",
+      "n": 888,
+      "spearman": -0.11584341078468212,
+      "ci_low": -0.1816149564321025,
+      "ci_high": -0.04667312634975868,
+      "city_boot_low": -0.492302483485644,
+      "city_boot_high": 0.2293058548125833
+    },
+    {
+      "relation": "r1_vs_low",
+      "x": "stockout_sku_day_rate",
+      "y": "low_run_max_days",
+      "n": 888,
+      "spearman": -0.050051312386217954,
+      "ci_low": -0.11725566463949029,
+      "ci_high": 0.017980787039412204,
+      "city_boot_low": -0.2857881654369844,
+      "city_boot_high": 0.10697277930333506
+    },
+    {
+      "relation": "r2_vs_low",
+      "x": "stockout_hour_rate",
+      "y": "low_run_max_days",
+      "n": 888,
+      "spearman": 0.014336220943258435,
+      "ci_low": -0.05121044891809002,
+      "ci_high": 0.07844778385470125,
+      "city_boot_low": -0.34493926067723724,
+      "city_boot_high": 0.21048607744559708
+    }
+  ],
+  "within_decile": [
+    {
+      "stratum": "decile",
+      "group": 1,
+      "n": 89,
+      "relation": "r1_per_day",
+      "spearman": 0.4817456737123261
+    },
+    {
+      "stratum": "decile",
+      "group": 1,
+      "n": 89,
+      "relation": "r2_per_day",
+      "spearman": -0.3345874581961375
+    },
+    {
+      "stratum": "decile",
+      "group": 1,
+      "n": 89,
+      "relation": "r1_zero",
+      "spearman": -0.5596744950364066
+    },
+    {
+      "stratum": "decile",
+      "group": 1,
+      "n": 89,
+      "relation": "r2_zero",
+      "spearman": 0.5111126244024493
+    },
+    {
+      "stratum": "decile",
+      "group": 2,
+      "n": 89,
+      "relation": "r1_per_day",
+      "spearman": 0.3128375588960871
+    },
+    {
+      "stratum": "decile",
+      "group": 2,
+      "n": 89,
+      "relation": "r2_per_day",
+      "spearman": -0.391130405175349
+    },
+    {
+      "stratum": "decile",
+      "group": 2,
+      "n": 89,
+      "relation": "r1_zero",
+      "spearman": -0.42823823832344504
+    },
+    {
+      "stratum": "decile",
+      "group": 2,
+      "n": 89,
+      "relation": "r2_zero",
+      "spearman": 0.5805438395687563
+    },
+    {
+      "stratum": "decile",
+      "group": 3,
+      "n": 89,
+      "relation": "r1_per_day",
+      "spearman": -0.08585291113381002
+    },
+    {
+      "stratum": "decile",
+      "group": 3,
+      "n": 89,
+      "relation": "r2_per_day",
+      "spearman": -0.45211292183300966
+    },
+    {
+      "stratum": "decile",
+      "group": 3,
+      "n": 89,
+      "relation": "r1_zero",
+      "spearman": -0.3010848793854472
+    },
+    {
+      "stratum": "decile",
+      "group": 3,
+      "n": 89,
+      "relation": "r2_zero",
+      "spearman": 0.4877338735939993
+    },
+    {
+      "stratum": "decile",
+      "group": 4,
+      "n": 89,
+      "relation": "r1_per_day",
+      "spearman": 0.24186347405511044
+    },
+    {
+      "stratum": "decile",
+      "group": 4,
+      "n": 89,
+      "relation": "r2_per_day",
+      "spearman": -0.3649302008852571
+    },
+    {
+      "stratum": "decile",
+      "group": 4,
+      "n": 89,
+      "relation": "r1_zero",
+      "spearman": -0.2140580111259593
+    },
+    {
+      "stratum": "decile",
+      "group": 4,
+      "n": 89,
+      "relation": "r2_zero",
+      "spearman": 0.5864502290640291
+    },
+    {
+      "stratum": "decile",
+      "group": 5,
+      "n": 89,
+      "relation": "r1_per_day",
+      "spearman": 0.06423248311465697
+    },
+    {
+      "stratum": "decile",
+      "group": 5,
+      "n": 89,
+      "relation": "r2_per_day",
+      "spearman": -0.2714771513352445
+    },
+    {
+      "stratum": "decile",
+      "group": 5,
+      "n": 89,
+      "relation": "r1_zero",
+      "spearman": -0.12295919236387519
+    },
+    {
+      "stratum": "decile",
+      "group": 5,
+      "n": 89,
+      "relation": "r2_zero",
+      "spearman": 0.7179131412098906
+    },
+    {
+      "stratum": "decile",
+      "group": 6,
+      "n": 89,
+      "relation": "r1_per_day",
+      "spearman": 0.24098672534575322
+    },
+    {
+      "stratum": "decile",
+      "group": 6,
+      "n": 89,
+      "relation": "r2_per_day",
+      "spearman": 0.03203949608443991
+    },
+    {
+      "stratum": "decile",
+      "group": 6,
+      "n": 89,
+      "relation": "r1_zero",
+      "spearman": -0.15991998469095312
+    },
+    {
+      "stratum": "decile",
+      "group": 6,
+      "n": 89,
+      "relation": "r2_zero",
+      "spearman": 0.6027766901910312
+    },
+    {
+      "stratum": "decile",
+      "group": 7,
+      "n": 89,
+      "relation": "r1_per_day",
+      "spearman": 0.33228066293902925
+    },
+    {
+      "stratum": "decile",
+      "group": 7,
+      "n": 89,
+      "relation": "r2_per_day",
+      "spearman": -0.13057541709227105
+    },
+    {
+      "stratum": "decile",
+      "group": 7,
+      "n": 89,
+      "relation": "r1_zero",
+      "spearman": 0.15472552541865803
+    },
+    {
+      "stratum": "decile",
+      "group": 7,
+      "n": 89,
+      "relation": "r2_zero",
+      "spearman": 0.7646067415730339
+    },
+    {
+      "stratum": "decile",
+      "group": 8,
+      "n": 89,
+      "relation": "r1_per_day",
+      "spearman": 0.4072522982635343
+    },
+    {
+      "stratum": "decile",
+      "group": 8,
+      "n": 89,
+      "relation": "r2_per_day",
+      "spearman": 0.17150153217568953
+    },
+    {
+      "stratum": "decile",
+      "group": 8,
+      "n": 89,
+      "relation": "r1_zero",
+      "spearman": 0.25819933776333576
+    },
+    {
+      "stratum": "decile",
+      "group": 8,
+      "n": 89,
+      "relation": "r2_zero",
+      "spearman": 0.7435797036335409
+    },
+    {
+      "stratum": "decile",
+      "group": 9,
+      "n": 88,
+      "relation": "r1_per_day",
+      "spearman": 0.462681835793033
+    },
+    {
+      "stratum": "decile",
+      "group": 9,
+      "n": 88,
+      "relation": "r2_per_day",
+      "spearman": 0.20746011059842911
+    },
+    {
+      "stratum": "decile",
+      "group": 9,
+      "n": 88,
+      "relation": "r1_zero",
+      "spearman": 0.4151828957513254
+    },
+    {
+      "stratum": "decile",
+      "group": 9,
+      "n": 88,
+      "relation": "r2_zero",
+      "spearman": 0.5509589476207115
+    },
+    {
+      "stratum": "decile",
+      "group": 10,
+      "n": 88,
+      "relation": "r1_per_day",
+      "spearman": 0.11496601035539433
+    },
+    {
+      "stratum": "decile",
+      "group": 10,
+      "n": 88,
+      "relation": "r2_per_day",
+      "spearman": 0.2451128878870065
+    },
+    {
+      "stratum": "decile",
+      "group": 10,
+      "n": 88,
+      "relation": "r1_zero",
+      "spearman": 0.2588519148062281
+    },
+    {
+      "stratum": "decile",
+      "group": 10,
+      "n": 88,
+      "relation": "r2_zero",
+      "spearman": 0.47998908096927095
+    },
+    {
+      "stratum": "quartile",
+      "group": 1,
+      "n": 222,
+      "relation": "r1_per_day",
+      "spearman": 0.16439553641764246
+    },
+    {
+      "stratum": "quartile",
+      "group": 1,
+      "n": 222,
+      "relation": "r2_per_day",
+      "spearman": -0.38092449062770906
+    },
+    {
+      "stratum": "quartile",
+      "group": 1,
+      "n": 222,
+      "relation": "r1_zero",
+      "spearman": -0.4715635931293886
+    },
+    {
+      "stratum": "quartile",
+      "group": 1,
+      "n": 222,
+      "relation": "r2_zero",
+      "spearman": 0.553064235690329
+    },
+    {
+      "stratum": "quartile",
+      "group": 2,
+      "n": 222,
+      "relation": "r1_per_day",
+      "spearman": 0.08511380397094984
+    },
+    {
+      "stratum": "quartile",
+      "group": 2,
+      "n": 222,
+      "relation": "r2_per_day",
+      "spearman": -0.31856780792451644
+    },
+    {
+      "stratum": "quartile",
+      "group": 2,
+      "n": 222,
+      "relation": "r1_zero",
+      "spearman": -0.14673948809302825
+    },
+    {
+      "stratum": "quartile",
+      "group": 2,
+      "n": 222,
+      "relation": "r2_zero",
+      "spearman": 0.6123132810065389
+    },
+    {
+      "stratum": "quartile",
+      "group": 3,
+      "n": 222,
+      "relation": "r1_per_day",
+      "spearman": 0.173785837265792
+    },
+    {
+      "stratum": "quartile",
+      "group": 3,
+      "n": 222,
+      "relation": "r2_per_day",
+      "spearman": -0.13091578144967336
+    },
+    {
+      "stratum": "quartile",
+      "group": 3,
+      "n": 222,
+      "relation": "r1_zero",
+      "spearman": 0.06722119700680759
+    },
+    {
+      "stratum": "quartile",
+      "group": 3,
+      "n": 222,
+      "relation": "r2_zero",
+      "spearman": 0.6928545163846922
+    },
+    {
+      "stratum": "quartile",
+      "group": 4,
+      "n": 222,
+      "relation": "r1_per_day",
+      "spearman": 0.28597940026999047
+    },
+    {
+      "stratum": "quartile",
+      "group": 4,
+      "n": 222,
+      "relation": "r2_per_day",
+      "spearman": 0.26472864114647293
+    },
+    {
+      "stratum": "quartile",
+      "group": 4,
+      "n": 222,
+      "relation": "r1_zero",
+      "spearman": 0.3104211790262848
+    },
+    {
+      "stratum": "quartile",
+      "group": 4,
+      "n": 222,
+      "relation": "r2_zero",
+      "spearman": 0.5432986100667482
+    }
+  ],
+  "overall_rates": [
+    {
+      "metric": "SKU-日缺货率（全样本池化）",
+      "numerator": 1992006.0,
+      "denominator": 4500000.0,
+      "rate": 0.442668,
+      "formula": "Σ(有缺货 SKU-日) / Σ(有效 SKU-日)"
+    },
+    {
+      "metric": "小时槽位缺货率（全样本池化）",
+      "numerator": 14311536.0,
+      "denominator": 72000000.0,
+      "rate": 0.19877133333333333,
+      "formula": "Σ(缺货小时) / (16 × Σ有效 SKU-日)"
+    }
+  ],
+  "decomposition": {
+    "identity_max_abs_diff": 2.7755575615628914e-17,
+    "intensity_median_hours": 7.190729192308743,
+    "spearman_intensity_vs_sku": -0.35163494617797497,
+    "spearman_intensity_vs_zero": 0.6375491472318604,
+    "spearman_intensity_vs_per_day": -0.41399245361553066,
+    "note": "恒等式为数学关系；强度与 SKU/零销的关系仅为样本统计关联"
+  },
+  "low_run": {
+    "risk_true_0": 744,
+    "risk_true_1_6": 54,
+    "risk_true_ge7": 90,
+    "p1_field_zero_but_true_1_6": 54,
+    "r3_hits": 90,
+    "r3_matches_true_ge7": true
+  },
+  "city_range": {
+    "sku_day_median_min": 0.3696581196581197,
+    "sku_day_median_max": 0.5056078021595263,
+    "hour_median_min": 0.1878844246031746,
+    "hour_median_max": 0.22585885565052227
+  },
+  "quadrant": [
+    {
+      "quadrant": "Q1 高规模·相对高效率",
+      "stores": 261,
+      "multi_risk": 11,
+      "multi_risk_rate": 0.0421455938697318,
+      "R1_rate": 0.06130268199233716,
+      "R2_rate": 0.022988505747126436,
+      "R3_rate": 0.11877394636015326,
+      "R4_rate": 0.007662835249042145,
+      "R5_rate": 0.038314176245210725,
+      "R6_rate": 0.034482758620689655
+    },
+    {
+      "quadrant": "Q2 高规模·相对低效率",
+      "stores": 183,
+      "multi_risk": 1,
+      "multi_risk_rate": 0.00546448087431694,
+      "R1_rate": 0.02185792349726776,
+      "R2_rate": 0.00546448087431694,
+      "R3_rate": 0.0,
+      "R4_rate": 0.0,
+      "R5_rate": 0.0,
+      "R6_rate": 0.03278688524590164
+    },
+    {
+      "quadrant": "Q3 低规模·相对高效率",
+      "stores": 183,
+      "multi_risk": 52,
+      "multi_risk_rate": 0.28415300546448086,
+      "R1_rate": 0.24043715846994534,
+      "R2_rate": 0.08743169398907104,
+      "R3_rate": 0.3114754098360656,
+      "R4_rate": 0.02185792349726776,
+      "R5_rate": 0.2677595628415301,
+      "R6_rate": 0.07650273224043716
+    },
+    {
+      "quadrant": "Q4 低规模·相对低效率",
+      "stores": 261,
+      "multi_risk": 68,
+      "multi_risk_rate": 0.26053639846743293,
+      "R1_rate": 0.09578544061302682,
+      "R2_rate": 0.25287356321839083,
+      "R3_rate": 0.007662835249042145,
+      "R4_rate": 0.31800766283524906,
+      "R5_rate": 0.11494252873563218,
+      "R6_rate": 0.10344827586206896
+    }
+  ],
+  "structure": [
+    {
+      "cluster": "G1",
+      "stores": 189,
+      "R7_rate": 0.15873015873015872,
+      "R8_rate": 0.32275132275132273,
+      "multi_risk_rate": 0.25396825396825395,
+      "stockout_sku_day_median": 0.4428184281842819,
+      "stockout_hour_median": 0.2028897849462365
+    },
+    {
+      "cluster": "G2",
+      "stores": 181,
+      "R7_rate": 0.281767955801105,
+      "R8_rate": 0.011049723756906077,
+      "multi_risk_rate": 0.30939226519337015,
+      "stockout_sku_day_median": 0.4453703703703704,
+      "stockout_hour_median": 0.2108707264957265
+    },
+    {
+      "cluster": "G3",
+      "stores": 168,
+      "R7_rate": 0.041666666666666664,
+      "R8_rate": 0.03571428571428571,
+      "multi_risk_rate": 0.05952380952380952,
+      "stockout_sku_day_median": 0.44757004830917874,
+      "stockout_hour_median": 0.2039751191249729
+    },
+    {
+      "cluster": "G4",
+      "stores": 350,
+      "R7_rate": 0.014285714285714285,
+      "R8_rate": 0.06,
+      "multi_risk_rate": 0.05142857142857143,
+      "stockout_sku_day_median": 0.43852525252525254,
+      "stockout_hour_median": 0.19279452364332755
+    }
+  ],
+  "top_combinations": [
+    {
+      "combination": "缺货+高零销",
+      "stores": 38,
+      "rank": 1,
+      "definition": "恰好只命中这些域"
+    },
+    {
+      "combination": "持续低销+高波动",
+      "stores": 36,
+      "rank": 2,
+      "definition": "恰好只命中这些域"
+    },
+    {
+      "combination": "缺货+高异常日",
+      "stores": 10,
+      "rank": 3,
+      "definition": "恰好只命中这些域"
+    },
+    {
+      "combination": "缺货+高零销+高波动",
+      "stores": 9,
+      "rank": 4,
+      "definition": "恰好只命中这些域"
+    },
+    {
+      "combination": "缺货+高波动",
+      "stores": 6,
+      "rank": 5,
+      "definition": "恰好只命中这些域"
+    },
+    {
+      "combination": "缺货+持续低销+高波动",
+      "stores": 5,
+      "rank": 6,
+      "definition": "恰好只命中这些域"
+    },
+    {
+      "combination": "缺货+高波动+高异常日",
+      "stores": 5,
+      "rank": 6,
+      "definition": "恰好只命中这些域"
+    },
+    {
+      "combination": "高波动+高异常日",
+      "stores": 5,
+      "rank": 6,
+      "definition": "恰好只命中这些域"
+    },
+    {
+      "combination": "缺货+高零销+高波动+高异常日",
+      "stores": 4,
+      "rank": 9,
+      "definition": "恰好只命中这些域"
+    },
+    {
+      "combination": "缺货+高零销+高异常日",
+      "stores": 3,
+      "rank": 10,
+      "definition": "恰好只命中这些域"
+    },
+    {
+      "combination": "高零销+高波动",
+      "stores": 3,
+      "rank": 10,
+      "definition": "恰好只命中这些域"
+    }
+  ],
+  "combination_definitions": {
+    "at_least": "d8b_pairwise_combinations.csv：同时命中两个域，允许其他域",
+    "exact": "d10_top_combinations.csv：恰好只命中该组合，rank 并列时全部列出"
+  },
+  "city0_exclusion": [
+    {
+      "sensitivity": "exclude_city0_original_thresholds_R1",
+      "metric": "stockout_sku_day_rate",
+      "threshold": 0.4855318710740397,
+      "hits": 83
+    },
+    {
+      "sensitivity": "exclude_city0_original_thresholds_R2",
+      "metric": "stockout_hour_rate",
+      "threshold": 0.2233611111111111,
+      "hits": 89
+    },
+    {
+      "sensitivity": "exclude_city0_original_thresholds_R4",
+      "metric": "zero_rate",
+      "threshold": 0.09165656565656577,
+      "hits": 88
+    },
+    {
+      "sensitivity": "exclude_city0_original_thresholds_R5",
+      "metric": "cv",
+      "threshold": 0.2987298216965301,
+      "hits": 86
+    },
+    {
+      "sensitivity": "exclude_city0_original_thresholds_R6",
+      "metric": "anomaly_rate",
+      "threshold": 0.0444444444444444,
+      "hits": 51
+    },
+    {
+      "sensitivity": "exclude_city0_original_thresholds_multi",
+      "metric": "domain_count>=2",
+      "threshold": NaN,
+      "hits": 129
+    },
+    {
+      "sensitivity": "exclude_city0_recomputed_thresholds_R1",
+      "metric": "stockout_sku_day_rate",
+      "threshold": 0.49370370370370364,
+      "hits": 60
+    },
+    {
+      "sensitivity": "exclude_city0_recomputed_thresholds_R2",
+      "metric": "stockout_hour_rate",
+      "threshold": 0.22856658692185006,
+      "hits": 60
+    },
+    {
+      "sensitivity": "exclude_city0_recomputed_thresholds_R4",
+      "metric": "zero_rate",
+      "threshold": 0.10727272727272724,
+      "hits": 60
+    },
+    {
+      "sensitivity": "exclude_city0_recomputed_thresholds_R5",
+      "metric": "cv",
+      "threshold": 0.3101901999824992,
+      "hits": 60
+    },
+    {
+      "sensitivity": "exclude_city0_recomputed_thresholds_R6",
+      "metric": "anomaly_rate",
+      "threshold": 0.0444444444444444,
+      "hits": 51
+    },
+    {
+      "sensitivity": "exclude_city0_recomputed_thresholds_multi",
+      "metric": "domain_count>=2",
+      "threshold": NaN,
+      "hits": 96
+    }
+  ],
+  "typical": [
+    {
+      "group": "0域",
+      "stores_in_group": 581,
+      "store_id": 35,
+      "city_id": 0,
+      "domain_count": 0,
+      "distance": 0.3385548719793292,
+      "stockout_sku_day_rate": 0.4347826086956521,
+      "stockout_hour_rate": 0.1954106280193236,
+      "zero_rate": 0.0347826086956521,
+      "cv": 0.2037583248688719,
+      "per_day_index": 67.89133333333334,
+      "R1": 0,
+      "R2": 0,
+      "R3": 0,
+      "R4": 0,
+      "R5": 0,
+      "R6": 0,
+      "R7": 0,
+      "R8": 0
+    },
+    {
+      "group": "1域",
+      "stores_in_group": 175,
+      "store_id": 660,
+      "city_id": 13,
+      "domain_count": 1,
+      "distance": 0.711319712988262,
+      "stockout_sku_day_rate": 0.4558404558404558,
+      "stockout_hour_rate": 0.2176816239316239,
+      "zero_rate": 0.07008547008547,
+      "cv": 0.2600524190290935,
+      "per_day_index": 28.67466666666667,
+      "R1": 0,
+      "R2": 0,
+      "R3": 0,
+      "R4": 0,
+      "R5": 0,
+      "R6": 1,
+      "R7": 0,
+      "R8": 0
+    },
+    {
+      "group": "2域",
+      "stores_in_group": 101,
+      "store_id": 342,
+      "city_id": 12,
+      "domain_count": 2,
+      "distance": 0.9074182412673863,
+      "stockout_sku_day_rate": 0.4338624338624338,
+      "stockout_hour_rate": 0.2250330687830687,
+      "zero_rate": 0.0978835978835978,
+      "cv": 0.2716688609917047,
+      "per_day_index": 18.783,
+      "R1": 0,
+      "R2": 1,
+      "R3": 0,
+      "R4": 1,
+      "R5": 0,
+      "R6": 0,
+      "R7": 0,
+      "R8": 0
+    },
+    {
+      "group": "≥3域",
+      "stores_in_group": 31,
+      "store_id": 795,
+      "city_id": 3,
+      "domain_count": 3,
+      "distance": 0.914344558889457,
+      "stockout_sku_day_rate": 0.4453703703703704,
+      "stockout_hour_rate": 0.2298611111111111,
+      "zero_rate": 0.124074074074074,
+      "cv": 0.3484356050144614,
+      "per_day_index": 7.260077777777777,
+      "R1": 0,
+      "R2": 1,
+      "R3": 0,
+      "R4": 1,
+      "R5": 1,
+      "R6": 0,
+      "R7": 1,
+      "R8": 0
+    }
+  ],
+  "bootstrap": {
+    "seed": 42,
+    "n_boot": 1000,
+    "store_n": 888,
+    "city_n": 18,
+    "city_sample": {
+      "min": 218,
+      "max": 1983,
+      "median": 852.0,
+      "n_cities": 18,
+      "n_boot": 1000,
+      "seed": 42
+    },
+    "method": "percentile 2.5/97.5; store_id sorted before resampling"
+  }
+}

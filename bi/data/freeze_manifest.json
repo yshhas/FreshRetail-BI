@@ -1,0 +1,146 @@
+{
+  "version": "p1-p4-freeze-2026-11-08",
+  "contract_version": "bi0-contract-v2",
+  "contract_base": "bi0-contract-v1",
+  "period": "2024-03-28/2024-06-25",
+  "description": "BI-0 read-only source manifest; P1-P4 Feature Freeze; BI-2 product assets amendment",
+  "amendments": [
+    {
+      "id": "bi0-amend-2026-11-08-bi2-product",
+      "contract_version": "bi0-contract-v2",
+      "base_data_version": "p1-p4-freeze-2026-11-08",
+      "date": "2026-11-08",
+      "stage": "BI-2",
+      "files_added": 3,
+      "files_modified": 0,
+      "note": "保留原 22 项记录与 SHA-256 不变；数据版本不变，仅扩展契约覆盖范围"
+    }
+  ],
+  "files": {
+    "data/derived/agg_daily.parquet": {
+      "sha256": "211642c68486c1f3492682db0365f9e15f0238980a0879c4d2f5f337c0afdca0",
+      "bytes": 10209
+    },
+    "data/derived/agg_hour_profile.parquet": {
+      "sha256": "2c22f0669d1cc9075ec675636efe9405e9fd3dfb5197ed92990b6cdad1dfdb43",
+      "bytes": 2800
+    },
+    "data/derived/agg_hour_weekday.parquet": {
+      "sha256": "2bc1019a8cc2384870fda78d1a5e29e237cacebb6e76939bb8509d811b6d7af7",
+      "bytes": 3972
+    },
+    "data/analysis/p2/t1_sku_metrics.csv": {
+      "sha256": "22b16f874db0da4c7d5aa97aef6aee6d573a2fa40cb7889d45b4f2ef8488b85a",
+      "bytes": 359727
+    },
+    "data/analysis/p2/t9_sku_risk_flags.csv": {
+      "sha256": "cca4d2c268d3a7a37b3480f58895abb97ac8a9b67fbbb37621f5f945f7a05d5d",
+      "bytes": 17256
+    },
+    "data/analysis/p2/t4_category_l1.csv": {
+      "sha256": "fb74d7e0ab8cee177f8dbcbaa5d3b83430a5f26911aaa6344e9982884da98371",
+      "bytes": 6302
+    },
+    "data/analysis/p3/a1_city_metrics.csv": {
+      "sha256": "5494582a8926922fc500e1c798c32c10fbf9f899a4dcd4527a65bce057136036",
+      "bytes": 11035
+    },
+    "data/analysis/p3d/d5_city_risk.csv": {
+      "sha256": "1c7720f4c40d4bbc2ee1edb29b5db7ff61727b9b23f70a11cc07a2b26e1e54b5",
+      "bytes": 4166
+    },
+    "data/analysis/p3d/d6_quadrant_risk.csv": {
+      "sha256": "bc54b97b7758a7be6af42396b6eefae377732a9e28c3864b9d567907b1e79b0d",
+      "bytes": 760
+    },
+    "data/analysis/p3d/d7_structure_risk.csv": {
+      "sha256": "d7e886330add1a0e4e63f526294f382bb8ecc58d30f12d2d12158b3a73878b54",
+      "bytes": 509
+    },
+    "data/analysis/p3d/d8b_pairwise_combinations.csv": {
+      "sha256": "01bc862288bef79d6ae7cba0f520624810da3bd09f39c72d7372fd0d6a70c860",
+      "bytes": 1010
+    },
+    "data/analysis/p3d/d9_domain_count.csv": {
+      "sha256": "0826c940a22f9a48171c2195c47dd1a2135583b20db4976cb4ce3ffcb87fa495",
+      "bytes": 61
+    },
+    "data/analysis/p3d/d13_overall_rates.csv": {
+      "sha256": "908f10d4f50415a0957904df07ec636595c3e0a841c2f965207d5e37b45fdba4",
+      "bytes": 287
+    },
+    "data/analysis/p4/p4_a_store_profile.csv": {
+      "sha256": "2a86bd375c5da044b717bb8ca78f19d8fec7cd92c28e60798d61e02e5e054dc3",
+      "bytes": 406353
+    },
+    "data/analysis/p4/p4_b_store_diagnosis.csv": {
+      "sha256": "baaf4a35604ceb4ab4e9bd9554fa1e5ce7368a30a5f1bbb4514cd4c192850814",
+      "bytes": 93464
+    },
+    "data/analysis/p4/p4_b_not_applicable.csv": {
+      "sha256": "c69a116d9e5c5d0aa456654eef6922811090b40fe5365817924d3fc014eb9a37",
+      "bytes": 914
+    },
+    "data/analysis/p4/p4_b_exact_combinations.csv": {
+      "sha256": "f790177a67437afb7aca45583e005ae5e83f35620be83a38a8ce267353ee49c2",
+      "bytes": 968
+    },
+    "data/analysis/p4/p4_c_store_sku_risk_summary.csv": {
+      "sha256": "7202e4df681886a3cac24155f5134a6e32bd5e3229061e26b74de16ca1c5f0ac",
+      "bytes": 136166
+    },
+    "data/analysis/p4/p4_c_flagged_sku_distribution.csv": {
+      "sha256": "616a2c3212b168f97c3a3204dea1768c5b5b0aeb0c98ecc382c0bf77a9e2b541",
+      "bytes": 12282
+    },
+    "data/analysis/p4/p4_c_category_risk_profile.csv": {
+      "sha256": "10526d464fa204a412baf6cbf2fb0bf32517ad7c0bfbf989b42fe6fa3902be39",
+      "bytes": 3351
+    },
+    "data/analysis/p4/p4_c_sku_pair_cooccurrence.csv": {
+      "sha256": "290b289de04b8ee66f0b94e28185aaa3103b3ab61aa56fd9cb243e9bc7065996",
+      "bytes": 54989
+    },
+    "data/analysis/p4/p4_c_quadrant_cluster_cross.csv": {
+      "sha256": "1511935fa6d30edac435b70ef3208bd2106c12c35ac39639422a55b3e3a65cd3",
+      "bytes": 1324
+    },
+    "data/analysis/p4/p4_c_store_sku_incidence.csv": {
+      "sha256": "5a00ff98aa6e6da577eccb73c32188b6db01ef983d4781ed737e1402f6b1d996",
+      "bytes": 4472007,
+      "rows": 50000,
+      "primary_key": [
+        "store_id",
+        "product_id"
+      ],
+      "stage": "P4-C",
+      "dataset_version": "p1-p4-freeze-2026-11-08",
+      "contract_version": "bi0-contract-v2",
+      "purpose": "BI-2 SKU→门店覆盖：覆盖门店列表、城市汇总、SKU 详情下钻"
+    },
+    "data/analysis/p2/t8_head_tail.csv": {
+      "sha256": "0172f82a718f0fd6c3b7fea3e88c7c9118762cadbc8ea9527f4effd14d7058f5",
+      "bytes": 327,
+      "rows": 2,
+      "primary_key": [
+        "group"
+      ],
+      "stage": "P2",
+      "dataset_version": "p1-p4-freeze-2026-11-08",
+      "contract_version": "bi0-contract-v2",
+      "purpose": "BI-2 商品总览头部/长尾对比"
+    },
+    "data/analysis/p3c/c3_category_penetration.csv": {
+      "sha256": "3b1fa3c62d31ef3506282f34825d40f05ab7ca7e4b72eca5f37c32b71ecc78ac",
+      "bytes": 2696,
+      "rows": 32,
+      "primary_key": [
+        "raw_id"
+      ],
+      "stage": "P3-C",
+      "dataset_version": "p1-p4-freeze-2026-11-08",
+      "contract_version": "bi0-contract-v2",
+      "purpose": "BI-2 一级类别结构的类别渗透率与 rare 标记"
+    }
+  }
+}

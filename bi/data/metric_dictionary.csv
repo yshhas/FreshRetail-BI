@@ -1,0 +1,27 @@
+metric_id,metric_name,level,numerator,denominator,period,sample_scope,missing_rule,small_sample_rule,source_table,notes
+SAMPLE-ALL,全部门店,门店,—,—,90天,all,无,不适用,P4-A,898 家
+SAMPLE-RISK,主分析门店,门店,—,—,90天,risk,无,不适用,P4-A,SKU≥10 的 888 家
+P1-TOTAL,90天归一化销量指数合计,全样本,Σ sales_index,—,90天,all,不适用,不适用,P4-A/P1,不是销售额或 GMV
+P1-PER-DAY,单店日均归一化销量指数,门店,total_index,90,90天,all,不适用,不适用,P4-A/P1,不是金额
+P2-SKU,链级 SKU 数,链级,COUNT DISTINCT product_id,—,90天,all,不适用,不适用,P2 t1,865
+P2-RISK,风险 SKU,链级,risk_flag_count>0,—,90天,all,不适用,不适用,P2 t9/P4-C,117 flagged / 35 multi
+D1,城市级池化 SKU-日缺货率,城市,Σ有缺货 SKU-日,Σ有效 SKU-日,90天,all,不适用,不适用,P3-A a1/P3-D d5,城市整体比较
+D2,城市门店率简单平均,城市,Σ门店 SKU-日率,门店数,90天,all,不适用,不适用,P3-A a1,门店率的算术平均
+D3,门店 SKU-日缺货率,门店,有缺货 SKU-日,门店有效 SKU-日,90天,all,不适用,不适用,P4-A/P3-B,门店分布/相关性/R1
+D4,门店缺货率中位数,门店分布,—,—,90天,risk,不适用,n<20 抑制,P3-D d5/P4-C,城市/同类对比
+D5,P90 尾部风险阈值,门店分布,—,—,90天,risk,不适用,仅作标记,P3-D d2,不是率本身
+D6,城市级池化小时缺货率,城市,Σ缺货小时,16×Σ有效 SKU-日,90天,all,不适用,不适用,P3-D d13,16 槽
+D7,门店小时缺货率,门店,门店缺货小时,16×门店有效 SKU-日,90天,all,不适用,不适用,P4-A/P3-B,16 槽；R2
+D8,城市池化零销率,城市,Σ零销 SKU-日,Σ全部 SKU-日,90天,all,不适用,不适用,P3-A a1,城市整体
+D9,门店零销率,门店,零销 SKU-日,门店 SKU-日,90天,all,不适用,不适用,P4-A/P3-B,门店 R4
+D10,城市门店离散度 CV,城市,门店日均指数总体标准差,门店日均指数均值,90天,all,不适用,不适用,P3-A a1,跨门店离散
+D11,门店销量 CV,门店,门店日指数标准差,门店日指数均值,90天,all,不适用,不适用,P4-A/P3-B,时间序列
+D12,R3 持续低销标记,门店,max_low_run_days>=7,—,90天,risk,不适用,不适用,P4-A/P3-D,二元
+D13,真实最长连续低销天数,门店,按 P1 规则复算,—,90天,risk,不适用,不适用,P4-A/P3-D,与 R3 分开
+D14,门店 SKU HHI,门店,Σ(SKU 销量份额²),—,90天,all,不适用,不适用,P4-A/P3-C,受 SKU 数影响
+D15,结构有效标记,门店,SKU≥10,—,90天,all,不适用,不适用,P4-A/P3-C,结构指标适用性
+D16,G1–G4 结构群,门店,结构相似聚类,—,90天,risk,不适用,不适用,P4-A/P3-C,不是业态
+D17,运营风险域,门店,缺货(R1|R2)|R3|R4|R5|R6,—,90天,risk,R7/R8 独立,n<20 不比较,P4-A/P4-B,域数量不是评分
+P4C-FLAGGED,风险 SKU 门店覆盖,SKU,store_count,898,90天,all,不适用,不适用,P4-C,观察期内
+P4C-PAIRS,风险 SKU 同店共同出现,SKU对,两 SKU 同店门店数,898,90天,all,不适用,稀疏不检验,P4-C,不是同日销售
+P4-C-GROUP,四象限×结构群,门店组,—,—,90天,risk,不适用,n<20 抑制,P4-C,16 格

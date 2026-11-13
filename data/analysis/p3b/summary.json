@@ -1,0 +1,258 @@
+{
+  "min_sku": 10,
+  "n_stores_total": 898,
+  "n_stores_model": 888,
+  "n_excluded_lt10": 10,
+  "model": {
+    "slope": 0.054566868972128715,
+    "ci_low": 0.04417983728483732,
+    "ci_high": 0.06495390065942011,
+    "r2_corr": 0.03456331824725522,
+    "r2_weighted": 0.1194611254148582,
+    "resid_mad": 0.05383355260470163,
+    "binned_max_abs": 0.06747031640717632,
+    "high_influence_count": 48,
+    "high_influence_share": 0.05405405405405406,
+    "p50_scale": 49.69933333333334,
+    "p50_eff": -0.005547858281809592,
+    "fit_status": "ok_with_caution",
+    "fit_reasons": [
+      "high_influence_gt_5pct"
+    ],
+    "caution_flags": [
+      "low_corr2",
+      "high_influence_gt_5pct",
+      "ols_slope_diff_gt_30pct",
+      "city_fe_changes_residual"
+    ]
+  },
+  "model_comparison": [
+    {
+      "model": "RLM-Huber",
+      "slope": 0.054566868972128715,
+      "ci_low": 0.04417983728483732,
+      "ci_high": 0.06495390065942011,
+      "r2_corr": 0.03456331824725522,
+      "r2_weighted": 0.1194611254148582,
+      "resid_mad": 0.05383355260470163,
+      "resid_corr_with_main": 1.0
+    },
+    {
+      "model": "RLM-Tukey",
+      "slope": 0.07223944702088975,
+      "ci_low": 0.06244932701287172,
+      "ci_high": 0.08202956702890776,
+      "r2_corr": 0.03456331824725528,
+      "r2_weighted": 0.239326108303481,
+      "resid_mad": 0.04976303098228718,
+      "resid_corr_with_main": 0.9951266150658259
+    },
+    {
+      "model": "QuantReg-median",
+      "slope": 0.06926553669728897,
+      "ci_low": NaN,
+      "ci_high": NaN,
+      "r2_corr": 0.03456331824725518,
+      "r2_weighted": NaN,
+      "resid_mad": NaN,
+      "resid_corr_with_main": NaN
+    },
+    {
+      "model": "OLS",
+      "slope": 0.0328100375334703,
+      "ci_low": 0.021376363110731336,
+      "ci_high": 0.04424371195620927,
+      "r2_corr": 0.034563318247255184,
+      "r2_weighted": NaN,
+      "resid_mad": 0.05720034064978413,
+      "resid_corr_with_main": 0.9922205570873385
+    },
+    {
+      "model": "RLM-Huber + City FE",
+      "slope": 0.018191177749175738,
+      "ci_low": 0.0051451187747553594,
+      "ci_high": 0.031237236723596115,
+      "r2_corr": 0.4463501847511845,
+      "r2_weighted": 0.5705763978129266,
+      "resid_mad": 0.041305790451951485,
+      "resid_corr_with_main": 0.7599008741864458
+    }
+  ],
+  "quadrant_counts": {
+    "Q1 高规模·相对高效率": 261,
+    "Q4 低规模·相对低效率": 261,
+    "Q2 高规模·相对低效率": 183,
+    "Q3 低规模·相对高效率": 183
+  },
+  "threshold_sensitivity": [
+    {
+      "min_sku": 5,
+      "n_stores": 897,
+      "slope": 0.06251802922397139,
+      "ci_low": 0.05283462817577388,
+      "ci_high": 0.0722014302721689,
+      "r2_corr": 0.05572351037398245,
+      "r2_weighted": 0.16603266754125767,
+      "resid_mad": 0.05116455049463042,
+      "p50_scale": 49.43410000000001,
+      "p50_eff": -0.006740939745733976,
+      "q1": 262,
+      "q2": 186,
+      "q3": 186,
+      "q4": 263,
+      "same_quadrant_share_vs_main": 0.9797297297297297,
+      "common_stores": 888
+    },
+    {
+      "min_sku": 10,
+      "n_stores": 888,
+      "slope": 0.054566868972128715,
+      "ci_low": 0.04417983728483732,
+      "ci_high": 0.06495390065942011,
+      "r2_corr": 0.03456331824725522,
+      "r2_weighted": 0.1194611254148582,
+      "resid_mad": 0.05383355260470163,
+      "p50_scale": 49.69933333333334,
+      "p50_eff": -0.005547858281809592,
+      "q1": 261,
+      "q2": 183,
+      "q3": 183,
+      "q4": 261,
+      "same_quadrant_share_vs_main": 1.0,
+      "common_stores": 888
+    },
+    {
+      "min_sku": 20,
+      "n_stores": 808,
+      "slope": 0.04582980645210357,
+      "ci_low": 0.03374365527734431,
+      "ci_high": 0.05791595762686283,
+      "r2_corr": 0.013826541694126896,
+      "r2_weighted": 0.07019009460215697,
+      "resid_mad": 0.05222539030434864,
+      "p50_scale": 52.81744444444444,
+      "p50_eff": -0.004803138819829078,
+      "q1": 240,
+      "q2": 164,
+      "q3": 164,
+      "q4": 240,
+      "same_quadrant_share_vs_main": 0.931930693069307,
+      "common_stores": 808
+    },
+    {
+      "min_sku": 30,
+      "n_stores": 681,
+      "slope": 0.04560204368034821,
+      "ci_low": 0.03196383090280829,
+      "ci_high": 0.05924025645788813,
+      "r2_corr": 0.01648720219794653,
+      "r2_weighted": 0.06517994965994811,
+      "resid_mad": 0.044959413003221926,
+      "p50_scale": 59.70322222222221,
+      "p50_eff": -0.002682214382361936,
+      "q1": 196,
+      "q2": 144,
+      "q3": 144,
+      "q4": 197,
+      "same_quadrant_share_vs_main": 0.8223201174743024,
+      "common_stores": 681
+    }
+  ],
+  "quadrant_profile": [
+    {
+      "quadrant": "Q1 高规模·相对高效率",
+      "stores": 261,
+      "per_day_index_median": 78.96211111111113,
+      "per_sku_day_index_median": 1.0849420289855072,
+      "sku_count_median": 75.0,
+      "zero_rate_median": 0.033633633633633635,
+      "stockout_sku_day_rate_median": 0.4497747747747748,
+      "stockout_hour_rate_median": 0.19578804347826087,
+      "cv_median": 0.1989841099030912,
+      "anomaly_rate_median": 0.011111111111111112,
+      "promo_rate_median": 0.5188524590163935,
+      "max_low_run_days_median": 0.0,
+      "sustained_low_share": 0.11877394636015326
+    },
+    {
+      "quadrant": "Q2 高规模·相对低效率",
+      "stores": 183,
+      "per_day_index_median": 73.31477777777778,
+      "per_sku_day_index_median": 0.9180879629629632,
+      "sku_count_median": 80.0,
+      "zero_rate_median": 0.03194444444444444,
+      "stockout_sku_day_rate_median": 0.4325490196078432,
+      "stockout_hour_rate_median": 0.19195719954648527,
+      "cv_median": 0.1784828846076836,
+      "anomaly_rate_median": 0.0,
+      "promo_rate_median": 0.5233024691358025,
+      "max_low_run_days_median": 0.0,
+      "sustained_low_share": 0.0
+    },
+    {
+      "quadrant": "Q3 低规模·相对高效率",
+      "stores": 183,
+      "per_day_index_median": 34.090111111111106,
+      "per_sku_day_index_median": 1.191989898989899,
+      "sku_count_median": 29.0,
+      "zero_rate_median": 0.05707070707070707,
+      "stockout_sku_day_rate_median": 0.454040404040404,
+      "stockout_hour_rate_median": 0.20434941520467836,
+      "cv_median": 0.2560407062750492,
+      "anomaly_rate_median": 0.0,
+      "promo_rate_median": 0.4952380952380952,
+      "max_low_run_days_median": 0.0,
+      "sustained_low_share": 0.3114754098360656
+    },
+    {
+      "quadrant": "Q4 低规模·相对低效率",
+      "stores": 261,
+      "per_day_index_median": 26.410988888888888,
+      "per_sku_day_index_median": 0.7661298412698412,
+      "sku_count_median": 35.0,
+      "zero_rate_median": 0.06888888888888889,
+      "stockout_sku_day_rate_median": 0.4361111111111111,
+      "stockout_hour_rate_median": 0.2108707264957265,
+      "cv_median": 0.2292264364256271,
+      "anomaly_rate_median": 0.022222222222222223,
+      "promo_rate_median": 0.4912280701754387,
+      "max_low_run_days_median": 0.0,
+      "sustained_low_share": 0.007662835249042145
+    }
+  ],
+  "typical_stores": [
+    {
+      "quadrant": "Q1 高规模·相对高效率",
+      "store_id": 11,
+      "city_id": 4,
+      "per_day_index": 85.64888888888889,
+      "eff_resid": 0.05552342535848542,
+      "sku_count": 77
+    },
+    {
+      "quadrant": "Q2 高规模·相对低效率",
+      "store_id": 692,
+      "city_id": 0,
+      "per_day_index": 74.25844444444445,
+      "eff_resid": -0.04438648709708104,
+      "sku_count": 81
+    },
+    {
+      "quadrant": "Q3 低规模·相对高效率",
+      "store_id": 89,
+      "city_id": 16,
+      "per_day_index": 36.806777777777775,
+      "eff_resid": 0.1400559097614429,
+      "sku_count": 31
+    },
+    {
+      "quadrant": "Q4 低规模·相对低效率",
+      "store_id": 111,
+      "city_id": 5,
+      "per_day_index": 26.81454444444444,
+      "eff_resid": -0.08045070262777476,
+      "sku_count": 35
+    }
+  ],
+  "axis_note": "效率轴为 log(1+单SKU日均) 对 log(SKU覆盖数) 的 Huber RLM 残差；仅表示相对统计预期的偏离，不是因果或管理能力。"
+}

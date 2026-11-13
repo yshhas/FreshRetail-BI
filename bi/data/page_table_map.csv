@@ -1,0 +1,25 @@
+page,component,source_table,fields,filters,notes
+overview,kpi_cards,P4-A;P3-D d13;P2 t1/t9,total_index;per_day_index;store_count;stockout rates;multi_risk;flagged_skus,city;sample_scope,KPI 固定 90 天
+overview,daily_trend,P1 agg_daily,dt;sales_index_total;per_store_index,start;end,日期只缩放趋势
+overview,hour_profile,P1 agg_hour_profile,hour;sales_index;share,city,小时分布
+overview,weekday_hour_heatmap,P1 agg_hour_weekday,weekday;hour;sales_index,city,热力图
+overview,city_table,P3-A a1;P3-D d5,city_id;store_count;stockout;multi_risk,city;small_city,城市概览
+city,city_scatter,P3-A a1,city_total_index;store_count;per_store_day;sku_per_store_mean,city,点击下钻
+city,city_table,P3-A a1;P3-D d5,pooled/store-mean/median;multi risk,city,口径分列
+stores,quadrant_scatter,P3-B b1/P4-A,per_day_index;eff_resid;quadrant,city;quadrant;cluster,框选
+stores,store_table,P4-A;P4-B,profile fields;R1-R8;domain;diagnosis_status,city;quadrant;cluster;risk_domain;sample_scope,分页
+stores,store_detail,P4-A;P4-B;P4-C summary,profile;labels;structural notes;flagged SKU summary,store_id,只读
+stores,peer_groups,P4-C cross,quadrant;cluster;stores;stats,sample_scope,n<20 抑制
+products,sku_pareto,P2 t1,product_id;total_index;rank,risk_flag;category,SKU 贡献
+products,hhi_distribution,P3-C c1,sku_hhi;sku_count,decile,集中度
+products,category_structure,P3-C c2/c3;P2 t4,share;coverage;n_sku,category,类别
+products,risk_sku_table,P2 t9;P4-C,product;coverage;flags;category,risk_flag;coverage,117/35
+products,sku_pairs,P4-C,product_a;product_b;stores_both,category;limit,观察期内同店共同出现
+risk,domain_counts,P3-D d9,domain_count;stores,risk_domain,五域
+risk,combo_matrix,P3-D d8b/ d10,combination;stores;definition,definition,至少/恰好
+risk,quadrant_risk,P3-D d6,quadrant;rates,quadrant,象限
+risk,cluster_risk,P3-D d7,cluster;R7/R8/multi,cluster,结构群
+risk,multi_risk_stores,P4-B,store;domain_labels;exact_combo;structural_notes,city;quadrant;cluster,下钻
+risk,structure_flags,P4-B,R7;R8,structure,独立结构提示
+explore,cross_table,view layer,whitelisted dimensions/metrics,all filters,禁止任意 SQL
+methodology,dictionary,BI metric CSV,D1-D17;P4 metrics,—,口径与限制

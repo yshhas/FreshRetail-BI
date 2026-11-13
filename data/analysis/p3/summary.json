@@ -1,0 +1,244 @@
+{
+  "city_count": 18,
+  "bootstrap": {
+    "n_boot": 1000,
+    "seed": 42,
+    "unit": "city",
+    "n_cities": 18,
+    "method": "percentile 2.5/97.5"
+  },
+  "sku_definition": "每个门店在 90 天内出现过的去重 SKU 数；城市单店 SKU 均值为门店算术平均",
+  "small_cities": [
+    {
+      "city_id": 10,
+      "store_count": 6
+    },
+    {
+      "city_id": 14,
+      "store_count": 9
+    },
+    {
+      "city_id": 17,
+      "store_count": 5
+    },
+    {
+      "city_id": 9,
+      "store_count": 6
+    },
+    {
+      "city_id": 8,
+      "store_count": 3
+    }
+  ],
+  "total_index": 4493660.7870000005,
+  "correlations": [
+    {
+      "relation": "total_vs_store_count",
+      "x": "city_total_index",
+      "y": "store_count",
+      "n_all": 18,
+      "spearman_all": 0.9354673420099426,
+      "ci_low_all": 0.7970606690890472,
+      "ci_high_all": 0.9879797503690366,
+      "n_excl_city0": 17,
+      "spearman_excl_city0": 0.9233600754541101,
+      "ci_low_excl_city0": 0.7512384080359864,
+      "ci_high_excl_city0": 0.9851918666190409
+    },
+    {
+      "relation": "store_day_vs_store_count",
+      "x": "city_store_day_avg",
+      "y": "store_count",
+      "n_all": 18,
+      "spearman_all": 0.09602479338512657,
+      "ci_low_all": -0.48324376413962883,
+      "ci_high_all": 0.6368960632269608,
+      "n_excl_city0": 17,
+      "spearman_excl_city0": -0.07357450800431158,
+      "ci_low_excl_city0": -0.6164594960257059,
+      "ci_high_excl_city0": 0.5194711985278627
+    },
+    {
+      "relation": "store_day_vs_sku_union",
+      "x": "city_store_day_avg",
+      "y": "sku_union",
+      "n_all": 18,
+      "spearman_all": 0.4654282765737873,
+      "ci_low_all": -0.060356110827808944,
+      "ci_high_all": 0.8002188203124397,
+      "n_excl_city0": 17,
+      "spearman_excl_city0": 0.3651960784313726,
+      "ci_low_excl_city0": -0.14893604279782816,
+      "ci_high_excl_city0": 0.7358937597647274
+    },
+    {
+      "relation": "store_day_vs_sku_per_store",
+      "x": "city_store_day_avg",
+      "y": "sku_per_store_mean",
+      "n_all": 18,
+      "spearman_all": 0.9669762641898865,
+      "ci_low_all": 0.8554679081018356,
+      "ci_high_all": 0.9979123717511934,
+      "n_excl_city0": 17,
+      "spearman_excl_city0": 0.9607843137254902,
+      "ci_low_excl_city0": 0.7994800132998376,
+      "ci_high_excl_city0": 0.9975248289662094
+    },
+    {
+      "relation": "store_day_vs_stockout_day",
+      "x": "city_store_day_avg",
+      "y": "stockout_day_rate",
+      "n_all": 18,
+      "spearman_all": -0.15376676986584106,
+      "ci_low_all": -0.7199728034361812,
+      "ci_high_all": 0.3981053046218486,
+      "n_excl_city0": 17,
+      "spearman_excl_city0": -0.14215686274509806,
+      "ci_low_excl_city0": -0.7531325603900695,
+      "ci_high_excl_city0": 0.45478231927131924
+    },
+    {
+      "relation": "store_day_vs_stockout_hour",
+      "x": "city_store_day_avg",
+      "y": "stockout_hour_rate",
+      "n_all": 18,
+      "spearman_all": -0.5314757481940144,
+      "ci_low_all": -0.8641623745917895,
+      "ci_high_all": -0.009209812269267575,
+      "n_excl_city0": 17,
+      "spearman_excl_city0": -0.47058823529411764,
+      "ci_low_excl_city0": -0.8450048377028714,
+      "ci_high_excl_city0": 0.10595441536619207
+    },
+    {
+      "relation": "zero_vs_stockout_day",
+      "x": "zero_rate",
+      "y": "stockout_day_rate",
+      "n_all": 18,
+      "spearman_all": -0.06501547987616099,
+      "ci_low_all": -0.5467775467775469,
+      "ci_high_all": 0.4350522575801478,
+      "n_excl_city0": 17,
+      "spearman_excl_city0": -0.12009803921568628,
+      "ci_low_excl_city0": -0.631238651281485,
+      "ci_high_excl_city0": 0.44501361386138616
+    },
+    {
+      "relation": "zero_vs_stockout_hour",
+      "x": "zero_rate",
+      "y": "stockout_hour_rate",
+      "n_all": 18,
+      "spearman_all": 0.6099071207430341,
+      "ci_low_all": 0.17404818992410234,
+      "ci_high_all": 0.870996483397579,
+      "n_excl_city0": 17,
+      "spearman_excl_city0": 0.5710784313725491,
+      "ci_low_excl_city0": 0.1339248642606196,
+      "ci_high_excl_city0": 0.874097222222222
+    },
+    {
+      "relation": "store_day_vs_store_cv",
+      "x": "city_store_day_avg",
+      "y": "store_dispersion_cv",
+      "n_all": 18,
+      "spearman_all": -0.5583075335397317,
+      "ci_low_all": -0.8815182829888714,
+      "ci_high_all": -0.024106268686859847,
+      "n_excl_city0": 17,
+      "spearman_excl_city0": -0.5980392156862745,
+      "ci_low_excl_city0": -0.9031647662309571,
+      "ci_high_excl_city0": -0.09477546309019956
+    },
+    {
+      "relation": "total_vs_sku_union",
+      "x": "city_total_index",
+      "y": "sku_union",
+      "n_all": 18,
+      "spearman_all": 0.9484004127966976,
+      "ci_low_all": 0.7953910306157024,
+      "ci_high_all": 0.9958758272997823,
+      "n_excl_city0": 17,
+      "spearman_excl_city0": 0.9387254901960785,
+      "ci_low_excl_city0": 0.7856407169609416,
+      "ci_high_excl_city0": 0.9950188348419793
+    }
+  ],
+  "city0_sensitivity": [
+    {
+      "metric": "store_share",
+      "city0": 0.32293986636971045,
+      "rest_median": NaN,
+      "note": "city0 门店数 / 全部门店数"
+    },
+    {
+      "metric": "total_share",
+      "city0": 0.5284386050833435,
+      "rest_median": NaN,
+      "note": "city0 总指数 / 样本总指数"
+    },
+    {
+      "metric": "store_day_avg",
+      "city0": 90.98175624521073,
+      "rest_median": 44.49750522875817,
+      "note": "city0 vs 其他城市中位"
+    },
+    {
+      "metric": "sku_per_store_mean",
+      "city0": 89.00344827586207,
+      "rest_median": 45.13333333333333,
+      "note": "city0 vs 其他城市中位"
+    },
+    {
+      "metric": "zero_rate",
+      "city0": 0.028692331865397613,
+      "rest_median": 0.05702054794520548,
+      "note": "city0 vs 其他城市中位"
+    },
+    {
+      "metric": "stockout_day_rate",
+      "city0": 0.4403368073043793,
+      "rest_median": 0.44778190345905805,
+      "note": "city0 vs 其他城市中位"
+    },
+    {
+      "metric": "stockout_hour_rate",
+      "city0": 0.1921794217796891,
+      "rest_median": 0.20394144144144144,
+      "note": "city0 vs 其他城市中位"
+    }
+  ],
+  "top3_store_day": [
+    {
+      "city_id": 0,
+      "city_store_day_avg": 90.98175624521073,
+      "store_count": 290
+    },
+    {
+      "city_id": 10,
+      "city_store_day_avg": 68.84274074074075,
+      "store_count": 6
+    },
+    {
+      "city_id": 14,
+      "city_store_day_avg": 57.77572345679012,
+      "store_count": 9
+    }
+  ],
+  "top3_store_day_eligible": [
+    {
+      "city_id": 0,
+      "city_store_day_avg": 90.98175624521073,
+      "store_count": 290
+    },
+    {
+      "city_id": 6,
+      "city_store_day_avg": 57.26953798449612,
+      "store_count": 43
+    },
+    {
+      "city_id": 11,
+      "city_store_day_avg": 55.83401140350877,
+      "store_count": 38
+    }
+  ]
+}

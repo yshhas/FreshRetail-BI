@@ -1,0 +1,313 @@
+{
+  "n_stores": 898,
+  "n_model": 888,
+  "n_lt10": 10,
+  "hhi": {
+    "median": 0.03247368834937221,
+    "p90": 0.13801546752767413
+  },
+  "deciles": [
+    {
+      "decile": 1,
+      "n": 89,
+      "sku_min": 10,
+      "sku_max": 20,
+      "hhi_median": 0.08722358351483903,
+      "hhi_p25": 0.06716991066392289,
+      "hhi_p75": 0.15991711217306556,
+      "per_day_median": 13.192655555555556,
+      "spearman_hhi_per_day": 0.42579162410623095,
+      "sample_flag": ""
+    },
+    {
+      "decile": 2,
+      "n": 89,
+      "sku_min": 20,
+      "sku_max": 27,
+      "hhi_median": 0.05803556207615201,
+      "hhi_p25": 0.05070957123728307,
+      "hhi_p75": 0.1521698543771277,
+      "per_day_median": 19.70601111111112,
+      "spearman_hhi_per_day": 0.7445182158665306,
+      "sample_flag": ""
+    },
+    {
+      "decile": 3,
+      "n": 89,
+      "sku_min": 27,
+      "sku_max": 35,
+      "hhi_median": 0.05654789643420103,
+      "hhi_p25": 0.0435755510515776,
+      "hhi_p75": 0.15674094306184921,
+      "per_day_median": 31.81698888888889,
+      "spearman_hhi_per_day": 0.7914538644875724,
+      "sample_flag": ""
+    },
+    {
+      "decile": 4,
+      "n": 89,
+      "sku_min": 35,
+      "sku_max": 42,
+      "hhi_median": 0.04078679664246337,
+      "hhi_p25": 0.0367469977677272,
+      "hhi_p75": 0.10997644540435027,
+      "per_day_median": 35.50177777777778,
+      "spearman_hhi_per_day": 0.7764215185563501,
+      "sample_flag": ""
+    },
+    {
+      "decile": 5,
+      "n": 89,
+      "sku_min": 42,
+      "sku_max": 50,
+      "hhi_median": 0.03511780056578876,
+      "hhi_p25": 0.032083528231617406,
+      "hhi_p75": 0.08396278231282979,
+      "per_day_median": 43.397000000000006,
+      "spearman_hhi_per_day": 0.735035750766088,
+      "sample_flag": ""
+    },
+    {
+      "decile": 6,
+      "n": 89,
+      "sku_min": 51,
+      "sku_max": 59,
+      "hhi_median": 0.02979243456695079,
+      "hhi_p25": 0.02772228255535789,
+      "hhi_p75": 0.03401491670594268,
+      "per_day_median": 51.26666666666668,
+      "spearman_hhi_per_day": 0.5442288049029623,
+      "sample_flag": ""
+    },
+    {
+      "decile": 7,
+      "n": 89,
+      "sku_min": 59,
+      "sku_max": 72,
+      "hhi_median": 0.02541684098615916,
+      "hhi_p25": 0.023683828979381562,
+      "hhi_p75": 0.026857873198051645,
+      "per_day_median": 63.457111111111104,
+      "spearman_hhi_per_day": 0.17509363295880154,
+      "sample_flag": ""
+    },
+    {
+      "decile": 8,
+      "n": 89,
+      "sku_min": 72,
+      "sku_max": 85,
+      "hhi_median": 0.021283447013495042,
+      "hhi_p25": 0.01999810796170534,
+      "hhi_p75": 0.023025228265300603,
+      "per_day_median": 75.00511111111113,
+      "spearman_hhi_per_day": 0.13631256384065374,
+      "sample_flag": ""
+    },
+    {
+      "decile": 9,
+      "n": 88,
+      "sku_min": 85,
+      "sku_max": 98,
+      "hhi_median": 0.018500358157157268,
+      "hhi_p25": 0.017695702192436623,
+      "hhi_p75": 0.0200670103779486,
+      "per_day_median": 92.29321666666667,
+      "spearman_hhi_per_day": 0.39473776901130647,
+      "sample_flag": ""
+    },
+    {
+      "decile": 10,
+      "n": 88,
+      "sku_min": 98,
+      "sku_max": 164,
+      "hhi_median": 0.016172825066726938,
+      "hhi_p25": 0.014429403519184685,
+      "hhi_p75": 0.017690533032368155,
+      "per_day_median": 122.79799444444444,
+      "spearman_hhi_per_day": -0.4339579444190061,
+      "sample_flag": ""
+    }
+  ],
+  "raw_correlations": [
+    {
+      "relation": "hhi_vs_per_day",
+      "x": "sku_hhi",
+      "y": "per_day_index",
+      "n": 888,
+      "spearman": -0.770789668156711,
+      "ci_low": -0.801940615805945,
+      "ci_high": -0.7357773668096955,
+      "city_boot_low": -0.8827823274061747,
+      "city_boot_high": -0.2017002333472275
+    },
+    {
+      "relation": "hhi_vs_per_sku",
+      "x": "sku_hhi",
+      "y": "per_sku_day_index",
+      "n": 888,
+      "spearman": 0.12497445254060938,
+      "ci_low": 0.04128827101684783,
+      "ci_high": 0.20233222700139294,
+      "city_boot_low": -0.21912958426898177,
+      "city_boot_high": 0.6494878353574649
+    },
+    {
+      "relation": "hhi_vs_eff_resid",
+      "x": "sku_hhi",
+      "y": "eff_resid",
+      "n": 888,
+      "spearman": 0.3200894012840857,
+      "ci_low": 0.24598423077591786,
+      "ci_high": 0.38612306196921276,
+      "city_boot_low": -0.013726434789185775,
+      "city_boot_high": 0.7590768449204724
+    },
+    {
+      "relation": "top1_vs_per_sku",
+      "x": "top1_sku_share",
+      "y": "per_sku_day_index",
+      "n": 888,
+      "spearman": 0.17812459866539354,
+      "ci_low": 0.09539398944211998,
+      "ci_high": 0.254157742093846,
+      "city_boot_low": -0.1886879719271257,
+      "city_boot_high": 0.706240958588296
+    },
+    {
+      "relation": "cat_count_vs_per_day",
+      "x": "n_cat",
+      "y": "per_day_index",
+      "n": 888,
+      "spearman": 0.8802449007778677,
+      "ci_low": 0.8631364028789743,
+      "ci_high": 0.8935804845729687,
+      "city_boot_low": 0.7232182018939672,
+      "city_boot_high": 0.9149240745348066
+    },
+    {
+      "relation": "cat_hhi_vs_per_day",
+      "x": "cat_hhi",
+      "y": "per_day_index",
+      "n": 888,
+      "spearman": -0.10603790274715007,
+      "ci_low": -0.16369292117615022,
+      "ci_high": -0.041838845300384175,
+      "city_boot_low": -0.3844689445316015,
+      "city_boot_high": 0.008368778154712679
+    }
+  ],
+  "similarity": {
+    "within_city_mean": 0.9052927357535783,
+    "within_city_median": 0.952340006601336,
+    "between_city_mean": 0.7232669361196964,
+    "between_city_median": 0.7519375432781211,
+    "diff_mean": 0.18202579963388188
+  },
+  "jaccard": {
+    "n_sample": 100,
+    "within_city_mean": 0.3732683286489923,
+    "between_city_mean": 0.1357439632165673,
+    "median": 0.16972708894878707
+  },
+  "rare": {
+    "rare_categories": [
+      1,
+      19,
+      9,
+      2
+    ],
+    "keep_categories": 28,
+    "ari_k4": 1.0,
+    "distance_corr": 0.999999376034089,
+    "main_cluster_sizes": {
+      "1": 189,
+      "2": 181,
+      "3": 168,
+      "4": 350
+    },
+    "sensitivity_cluster_sizes": {
+      "1": 189,
+      "2": 181,
+      "3": 168,
+      "4": 350
+    }
+  },
+  "k4_sizes": {
+    "1": 189,
+    "2": 181,
+    "3": 168,
+    "4": 350
+  },
+  "quadrant_profile": [
+    {
+      "quadrant": "Q1 高规模·相对高效率",
+      "stores": 261,
+      "sku_count_median": 75.0,
+      "sku_hhi_median": 0.023560807753149508,
+      "top1_sku_share_median": 0.06307762911709679,
+      "n_cat_median": 18.0,
+      "cat_hhi_median": 0.15661324477211935,
+      "cat_entropy_median": 2.2350557842310925
+    },
+    {
+      "quadrant": "Q2 高规模·相对低效率",
+      "stores": 183,
+      "sku_count_median": 80.0,
+      "sku_hhi_median": 0.020180492978339026,
+      "top1_sku_share_median": 0.059877643105399024,
+      "n_cat_median": 18.0,
+      "cat_hhi_median": 0.15821345726431518,
+      "cat_entropy_median": 2.2523202286231974
+    },
+    {
+      "quadrant": "Q3 低规模·相对高效率",
+      "stores": 183,
+      "sku_count_median": 29.0,
+      "sku_hhi_median": 0.13468273012551366,
+      "top1_sku_share_median": 0.33630683342108125,
+      "n_cat_median": 11.0,
+      "cat_hhi_median": 0.21267877541405872,
+      "cat_entropy_median": 1.8939447579484938
+    },
+    {
+      "quadrant": "Q4 低规模·相对低效率",
+      "stores": 261,
+      "sku_count_median": 35.0,
+      "sku_hhi_median": 0.040043185153820916,
+      "top1_sku_share_median": 0.09019653891881578,
+      "n_cat_median": 12.0,
+      "cat_hhi_median": 0.14207355123879983,
+      "cat_entropy_median": 2.1792980897107364
+    }
+  ],
+  "typical": [
+    {
+      "group": "低SKU·低HHI",
+      "store_id": 539,
+      "city_id": 6,
+      "sku_count": 44,
+      "sku_hhi": 0.030592717038257684
+    },
+    {
+      "group": "低SKU·高HHI",
+      "store_id": 682,
+      "city_id": 13,
+      "sku_count": 29,
+      "sku_hhi": 0.09949282293270433
+    },
+    {
+      "group": "高SKU·低HHI",
+      "store_id": 405,
+      "city_id": 0,
+      "sku_count": 83,
+      "sku_hhi": 0.02080754241505646
+    },
+    {
+      "group": "高SKU·高HHI",
+      "store_id": 22,
+      "city_id": 17,
+      "sku_count": 56,
+      "sku_hhi": 0.06316791287116211
+    }
+  ]
+}

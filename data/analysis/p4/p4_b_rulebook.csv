@@ -1,0 +1,12 @@
+﻿rule_id,category,condition,evidence_fields,label,prohibited_interpretation
+B0,适用性,in_risk_sample=True,P3-D in_risk_sample,进入诊断,不代表风险高低
+B0X,适用性,in_risk_sample=False,P3-D in_risk_sample,不适用，仅基础档案,不得诊断/比较
+B1,无运营域,domain_count=0,R1–R6,无运营域标记,不等于经营健康
+B2-STOCK,单域,domain_count=1 且 stockout_domain,R1/R2,缺货域单项命中,不推断缺货原因
+B2-LOW,单域,domain_count=1 且 R3,max_low_run_days>=7,持续低销单项命中,不代表需求不足
+B2-ZERO,单域,domain_count=1 且 R4,zero_rate>P90,高零销单项命中,不区分无货/无需求
+B2-VOL,单域,domain_count=1 且 R5,cv>P90,高波动单项命中,不推断经营能力
+B2-ANOM,单域,domain_count=1 且 R6,anomaly_rate>P90,高异常日单项命中,可能是数据/促销/节假日
+B3,多域,domain_count>=2,5 个运营域,多标签 + 精确组合,domain_count 不是严重度评分
+S7,结构提示,R7,sku_count<=P10,结构提示-覆盖偏窄,不进入运营域
+S8,结构提示,R8,同 SKU 十分位内 sku_hhi>P90,结构提示-结构集中,不进入运营域

@@ -1,0 +1,89 @@
+{
+  "rule_version": "1.0.0",
+  "rules": [
+    {
+      "id": "R001",
+      "field": "sale_amount",
+      "condition": "always",
+      "action": "新增 sales_index = sale_amount（仅复制，不改原值）",
+      "note": "全局归一化销售数量（归一化销量指数），非金额、非件数"
+    },
+    {
+      "id": "R002",
+      "field": "discount",
+      "condition": "discount = 0",
+      "action": "新增 discount_missing = TRUE；原始值保留",
+      "note": "0 与官方定义（1.0=无折扣）冲突，视为缺失，不修改原字段"
+    },
+    {
+      "id": "R003",
+      "field": "discount",
+      "condition": "discount > 1",
+      "action": "新增 discount_out_of_range = TRUE；原始值保留",
+      "note": "实测 34 行，最大 1.088，促销分析时排除"
+    },
+    {
+      "id": "R004",
+      "field": "discount",
+      "condition": "0 < discount <= 1",
+      "action": "新增 discount_valid = TRUE",
+      "note": "有效折扣区间"
+    },
+    {
+      "id": "R005",
+      "field": "discount",
+      "condition": "0 < discount < 1",
+      "action": "新增 promo_flag = TRUE",
+      "note": "1.0 视为无促销"
+    },
+    {
+      "id": "R006",
+      "field": "holiday_flag",
+      "condition": "always",
+      "action": "新增 holiday_proxy = holiday_flag",
+      "note": "仅作休息日代理，不解释为法定节假日"
+    },
+    {
+      "id": "R007",
+      "field": "stock_hour6_22_cnt",
+      "condition": "always",
+      "action": "新增 stockout_hours_6_22 = stock_hour6_22_cnt",
+      "note": "6:00-21:59 共 16 个槽位；实测与 hours_stock_status[6:22] 之和完全一致"
+    },
+    {
+      "id": "R008",
+      "field": "stock_hour6_22_cnt",
+      "condition": "stock_hour6_22_cnt > 0",
+      "action": "新增 stockout_day_flag = TRUE",
+      "note": "日级缺货标记"
+    },
+    {
+      "id": "R009",
+      "field": "stock_hour6_22_cnt",
+      "condition": "always",
+      "action": "新增 stockout_rate_6_22 = stock_hour6_22_cnt / 16",
+      "note": "分母 16 已由实测确认"
+    },
+    {
+      "id": "R010",
+      "field": "sale_amount",
+      "condition": "sale_amount = 0",
+      "action": "新增 sales_zero_flag = TRUE",
+      "note": "零销量不等于零需求，可能受缺货约束"
+    },
+    {
+      "id": "R011",
+      "field": "activity_flag",
+      "condition": "always",
+      "action": "保留原值，不生成结论性派生列",
+      "note": "业务含义未说明，仅作辅助变量"
+    },
+    {
+      "id": "R012",
+      "field": "precpt / avg_temperature / avg_humidity / avg_wind_level",
+      "condition": "always",
+      "action": "保留原值，不做单位换算",
+      "note": "单位未标注"
+    }
+  ]
+}

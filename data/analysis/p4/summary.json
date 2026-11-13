@@ -1,0 +1,40 @@
+{
+  "p4_a": {
+    "rows": 898,
+    "full": 888,
+    "basic": 10
+  },
+  "p4_b": {
+    "rows": 888,
+    "not_applicable": 10,
+    "domain_counts": {
+      "0.0": 581,
+      "1.0": 175,
+      "2.0": 101,
+      "3.0": 25,
+      "4.0": 4,
+      "5.0": 2
+    },
+    "multi": 132,
+    "exact_combinations": 16,
+    "pair_rows": 220,
+    "rulebook_rows": 11
+  },
+  "p4_c": {
+    "incidence_rows": 50000,
+    "unique_store_sku": 50000,
+    "observed_rows": 4500000,
+    "total_index": 4493660.7870000005,
+    "skus": 865,
+    "stores": 898,
+    "flagged_skus": 117,
+    "multi_flag_skus": 35,
+    "pair_rows": 1237,
+    "store_summary_rows": 898,
+    "quadrant_cluster_cells": 16,
+    "insufficient_cells": 5
+  },
+  "p4_d": {
+    "report": "08_P4经营诊断与决策支持报告.md"
+  }
+}

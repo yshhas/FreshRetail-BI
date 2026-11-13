@@ -1,0 +1,338 @@
+{
+  "sku_count": 865,
+  "coverage": {
+    "median": 10.0,
+    "mean": 57.80346820809248,
+    "p10": 1.0,
+    "p90": 173.60000000000002,
+    "max": 783,
+    "skus_le_2_stores": 230,
+    "skus_le_5_stores": 346
+  },
+  "pareto": {
+    "sku_count": 865,
+    "top10pct_share_pct": 72.29915848118515,
+    "top20pct_share_pct": 86.99970739469171,
+    "skus_to_80pct": 122
+  },
+  "spearman_total_vs_coverage": 0.9777589616593054,
+  "spearman_total_vs_efficiency": 0.5976815525301409,
+  "spearman_scale_rank_vs_eff_rank": 0.5976815386781124,
+  "top20_scale_mean_coverage": 434.1,
+  "top20_eff_mean_coverage": 212.95,
+  "zero_rate": {
+    "median": 0.029797979797979823,
+    "p90": 0.1836065573770492,
+    "p99": 0.366952380952381,
+    "max": 0.6555555555555556,
+    "skus_gt_20pct": 65
+  },
+  "cv": {
+    "median": 0.54158726306653,
+    "p90": 0.8824795584115621,
+    "max": 2.991024525006552
+  },
+  "risk": {
+    "flagged_skus": 117,
+    "multi_flag_skus": 35,
+    "thresholds": {
+      "cv_p95": 1.0600866969184302,
+      "zero_p95": 0.24444444444444446,
+      "hhi_p95": 0.18388997348157057,
+      "hhi_min_store_count": 5,
+      "anomaly_rate_gt": 0.05
+    }
+  },
+  "coverage_sensitivity": [
+    {
+      "min_store_count": 1,
+      "sku_count": 865,
+      "median_store_count": 10.0,
+      "spearman_scale_vs_eff": 0.5976815525301409,
+      "top10_eff_overlap_with_baseline": 10,
+      "top10_eff_mean_store_count": 80.1,
+      "top10_scale_mean_store_count": 479.5
+    },
+    {
+      "min_store_count": 2,
+      "sku_count": 715,
+      "median_store_count": 19.0,
+      "spearman_scale_vs_eff": 0.5888378116010956,
+      "top10_eff_overlap_with_baseline": 8,
+      "top10_eff_mean_store_count": 162.9,
+      "top10_scale_mean_store_count": 479.5
+    },
+    {
+      "min_store_count": 3,
+      "sku_count": 635,
+      "median_store_count": 26.0,
+      "spearman_scale_vs_eff": 0.622030747138692,
+      "top10_eff_overlap_with_baseline": 6,
+      "top10_eff_mean_store_count": 164.1,
+      "top10_scale_mean_store_count": 479.5
+    },
+    {
+      "min_store_count": 5,
+      "sku_count": 540,
+      "median_store_count": 37.0,
+      "spearman_scale_vs_eff": 0.6010560926325383,
+      "top10_eff_overlap_with_baseline": 5,
+      "top10_eff_mean_store_count": 164.4,
+      "top10_scale_mean_store_count": 479.5
+    },
+    {
+      "min_store_count": 10,
+      "sku_count": 443,
+      "median_store_count": 61.0,
+      "spearman_scale_vs_eff": 0.6714349917775758,
+      "top10_eff_overlap_with_baseline": 4,
+      "top10_eff_mean_store_count": 305.9,
+      "top10_scale_mean_store_count": 479.5
+    },
+    {
+      "min_store_count": 20,
+      "sku_count": 356,
+      "median_store_count": 81.0,
+      "spearman_scale_vs_eff": 0.7146240297036682,
+      "top10_eff_overlap_with_baseline": 4,
+      "top10_eff_mean_store_count": 322.2,
+      "top10_scale_mean_store_count": 479.5
+    },
+    {
+      "min_store_count": 50,
+      "sku_count": 241,
+      "median_store_count": 126.0,
+      "spearman_scale_vs_eff": 0.7317607420870341,
+      "top10_eff_overlap_with_baseline": 4,
+      "top10_eff_mean_store_count": 349.0,
+      "top10_scale_mean_store_count": 479.5
+    },
+    {
+      "min_store_count": 100,
+      "sku_count": 153,
+      "median_store_count": 185.0,
+      "spearman_scale_vs_eff": 0.7830002814522938,
+      "top10_eff_overlap_with_baseline": 3,
+      "top10_eff_mean_store_count": 379.7,
+      "top10_scale_mean_store_count": 479.5
+    }
+  ],
+  "head_tail": [
+    {
+      "group": "头部 Top20%",
+      "sku_count": 173,
+      "store_count_median": 174.0,
+      "per_series_day_median": 0.740755511022045,
+      "zero_rate_median": 0.021759259259259256,
+      "cv_series_median_median": 0.49368899069708916,
+      "promo_rate_median": 0.5245039682539683
+    },
+    {
+      "group": "长尾 Bottom50%",
+      "sku_count": 432,
+      "store_count_median": 2.0,
+      "per_series_day_median": 0.47798148148148156,
+      "zero_rate_median": 0.03518518518518515,
+      "cv_series_median_median": 0.5774628204191947,
+      "promo_rate_median": 0.4222222222222222
+    }
+  ],
+  "top1_scale": [
+    {
+      "display_code": "P0268",
+      "product_id": 267,
+      "total_index": 183395.0999999999,
+      "store_count": 131,
+      "per_series_day": 15.555139949109405,
+      "zero_rate": 0.03104325699745547,
+      "cv_series_median": 0.6131508650382551
+    }
+  ],
+  "top1_eff": [
+    {
+      "display_code": "P0268",
+      "product_id": 267,
+      "total_index": 183395.0999999999,
+      "store_count": 131,
+      "per_series_day": 15.555139949109405,
+      "zero_rate": 0.03104325699745547,
+      "cv_series_median": 0.6131508650382551
+    }
+  ],
+  "category_comparison": [
+    {
+      "level": "L1",
+      "display_code": "C05",
+      "total_index": 1159854.2880000034,
+      "store_count": 886,
+      "store_days": 79740,
+      "sku_store_days": 979920,
+      "category_sku_store_day_avg": 1.1836214058290508,
+      "category_store_day_avg": 14.545451316779577,
+      "rank_total_index": 1,
+      "rank_store_day_avg": 1,
+      "rank_sku_store_day_avg": 4
+    },
+    {
+      "level": "L1",
+      "display_code": "C21",
+      "total_index": 639484.0199999968,
+      "store_count": 890,
+      "store_days": 80100,
+      "sku_store_days": 497970,
+      "category_sku_store_day_avg": 1.2841818181818117,
+      "category_store_day_avg": 7.983570786516814,
+      "rank_total_index": 2,
+      "rank_store_day_avg": 2,
+      "rank_sku_store_day_avg": 3
+    },
+    {
+      "level": "L1",
+      "display_code": "C17",
+      "total_index": 472320.130000001,
+      "store_count": 876,
+      "store_days": 78840,
+      "sku_store_days": 645930,
+      "category_sku_store_day_avg": 0.73122494697568,
+      "category_store_day_avg": 5.990869228817871,
+      "rank_total_index": 3,
+      "rank_store_day_avg": 4,
+      "rank_sku_store_day_avg": 13
+    },
+    {
+      "level": "L1",
+      "display_code": "C22",
+      "total_index": 459301.9100000009,
+      "store_count": 839,
+      "store_days": 75510,
+      "sku_store_days": 255870,
+      "category_sku_store_day_avg": 1.7950596396607688,
+      "category_store_day_avg": 6.08266335584692,
+      "rank_total_index": 5,
+      "rank_store_day_avg": 3,
+      "rank_sku_store_day_avg": 1
+    },
+    {
+      "level": "L2",
+      "display_code": "S029",
+      "total_index": 997477.0880000007,
+      "store_count": 874,
+      "store_days": 78660,
+      "sku_store_days": 756270,
+      "category_sku_store_day_avg": 1.31894308646383,
+      "category_store_day_avg": 12.680868141367922,
+      "rank_total_index": 1,
+      "rank_store_day_avg": 1,
+      "rank_sku_store_day_avg": 5
+    },
+    {
+      "level": "L3",
+      "display_code": "T185",
+      "total_index": 242669.3239999999,
+      "store_count": 360,
+      "store_days": 32400,
+      "sku_store_days": 32940,
+      "category_sku_store_day_avg": 7.367010443230113,
+      "category_store_day_avg": 7.4897939506172815,
+      "rank_total_index": 2,
+      "rank_store_day_avg": 1,
+      "rank_sku_store_day_avg": 1
+    },
+    {
+      "level": "L3",
+      "display_code": "T083",
+      "total_index": 183340.59999999902,
+      "store_count": 783,
+      "store_days": 70470,
+      "sku_store_days": 70560,
+      "category_sku_store_day_avg": 2.5983645124716412,
+      "category_store_day_avg": 2.601682985667646,
+      "rank_total_index": 4,
+      "rank_store_day_avg": 7,
+      "rank_sku_store_day_avg": 5
+    }
+  ],
+  "category_top_store_day": {
+    "L1": [
+      {
+        "display_code": "C05",
+        "category_store_day_avg": 14.545451316779577,
+        "rank_store_day_avg": 1
+      },
+      {
+        "display_code": "C21",
+        "category_store_day_avg": 7.983570786516814,
+        "rank_store_day_avg": 2
+      },
+      {
+        "display_code": "C22",
+        "category_store_day_avg": 6.08266335584692,
+        "rank_store_day_avg": 3
+      },
+      {
+        "display_code": "C17",
+        "category_store_day_avg": 5.990869228817871,
+        "rank_store_day_avg": 4
+      },
+      {
+        "display_code": "C30",
+        "category_store_day_avg": 5.788758465011319,
+        "rank_store_day_avg": 5
+      }
+    ],
+    "L2": [
+      {
+        "display_code": "S029",
+        "category_store_day_avg": 12.680868141367922,
+        "rank_store_day_avg": 1
+      },
+      {
+        "display_code": "S065",
+        "category_store_day_avg": 5.753615044858534,
+        "rank_store_day_avg": 2
+      },
+      {
+        "display_code": "S051",
+        "category_store_day_avg": 4.539010037079649,
+        "rank_store_day_avg": 3
+      },
+      {
+        "display_code": "S026",
+        "category_store_day_avg": 3.801725111636451,
+        "rank_store_day_avg": 4
+      },
+      {
+        "display_code": "S030",
+        "category_store_day_avg": 3.167781739294467,
+        "rank_store_day_avg": 5
+      }
+    ],
+    "L3": [
+      {
+        "display_code": "T185",
+        "category_store_day_avg": 7.4897939506172815,
+        "rank_store_day_avg": 1
+      },
+      {
+        "display_code": "T025",
+        "category_store_day_avg": 4.146330055955238,
+        "rank_store_day_avg": 2
+      },
+      {
+        "display_code": "T082",
+        "category_store_day_avg": 4.062673637392851,
+        "rank_store_day_avg": 3
+      },
+      {
+        "display_code": "T002",
+        "category_store_day_avg": 3.7714140087145953,
+        "rank_store_day_avg": 4
+      },
+      {
+        "display_code": "T020",
+        "category_store_day_avg": 3.5468007866273354,
+        "rank_store_day_avg": 5
+      }
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+.mypy_cache/
+.ruff_cache/
+
+# ---------- Node ----------
+node_modules/
+bi/web/dist/
+*.local
+
+# ---------- IDE / OS ----------
+.idea/
+.vscode/
+.vs/
+.DS_Store
+Thumbs.db
+
+# ---------- Secrets ----------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+
+# ---------- Logs / temp ----------
+logs/
+*.log
+.screenshots/
+
+# ---------- Raw / reproducible data ----------
+data/raw/
+data/derived/clean_train.parquet
+data/derived/clean_eval.parquet
+# 注意：不要忽略 data/derived/agg_*.parquet、diag_*.parquet
+# 注意：不要忽略 data/analysis/（BI 与测试依赖）
+
+# ---------- Personal / private ----------
+简历/
+resume_materials/
+项目学习总地图.md
+_archive/
+_private/
+GitHub求职项目发布整理报告.md
+GitHub发布前整改验收报告.md

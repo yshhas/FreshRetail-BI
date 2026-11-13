@@ -1,0 +1,8 @@
+﻿metric,city0,rest_median,note
+store_share,0.32293986636971045,,city0 门店数 / 全部门店数
+total_share,0.5284386050833435,,city0 总指数 / 样本总指数
+store_day_avg,90.98175624521073,44.49750522875817,city0 vs 其他城市中位
+sku_per_store_mean,89.00344827586207,45.13333333333333,city0 vs 其他城市中位
+zero_rate,0.028692331865397613,0.05702054794520548,city0 vs 其他城市中位
+stockout_day_rate,0.4403368073043793,0.44778190345905805,city0 vs 其他城市中位
+stockout_hour_rate,0.1921794217796891,0.20394144144144144,city0 vs 其他城市中位

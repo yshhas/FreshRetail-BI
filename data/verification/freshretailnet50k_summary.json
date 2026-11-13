@@ -1,0 +1,413 @@
+{
+  "train.parquet": {
+    "file": "train.parquet",
+    "size_bytes": 106436287,
+    "expected_size": 106436287,
+    "size_match": true,
+    "sha256": "6706832db892bbae4969c19d87e07975d2543d2ba7d7d4756360654785de5a3d",
+    "expected_sha256": "6706832db892bbae4969c19d87e07975d2543d2ba7d7d4756360654785de5a3d",
+    "hash_match": true,
+    "rows": 4500000,
+    "columns": 19,
+    "row_groups": 4500,
+    "created_by": "parquet-cpp-arrow version 17.0.0"
+  },
+  "eval.parquet": {
+    "file": "eval.parquet",
+    "size_bytes": 8440124,
+    "expected_size": 8440124,
+    "size_match": true,
+    "sha256": "1b118840664280c6b88bffc84c80ee1f54c05d911e354b7599e5da10995e960e",
+    "expected_sha256": "1b118840664280c6b88bffc84c80ee1f54c05d911e354b7599e5da10995e960e",
+    "hash_match": true,
+    "rows": 350000,
+    "columns": 19,
+    "row_groups": 350,
+    "created_by": "parquet-cpp-arrow version 17.0.0"
+  },
+  "schema_diff": {
+    "only_train": [],
+    "only_eval": []
+  },
+  "train_column_stats": {
+    "city_id": {
+      "dtype": "int64",
+      "null": 0,
+      "nunique": 18,
+      "min": 0.0,
+      "max": 17.0,
+      "mean": 4.97442
+    },
+    "store_id": {
+      "dtype": "int64",
+      "null": 0,
+      "nunique": 898,
+      "min": 0.0,
+      "max": 897.0,
+      "mean": 409.08066
+    },
+    "management_group_id": {
+      "dtype": "int64",
+      "null": 0,
+      "nunique": 7,
+      "min": 0.0,
+      "max": 6.0,
+      "mean": 4.62164
+    },
+    "first_category_id": {
+      "dtype": "int64",
+      "null": 0,
+      "nunique": 32,
+      "min": 0.0,
+      "max": 31.0,
+      "mean": 15.21366
+    },
+    "second_category_id": {
+      "dtype": "int64",
+      "null": 0,
+      "nunique": 84,
+      "min": 0.0,
+      "max": 83.0,
+      "mean": 44.73508
+    },
+    "third_category_id": {
+      "dtype": "int64",
+      "null": 0,
+      "nunique": 233,
+      "min": 0.0,
+      "max": 232.0,
+      "mean": 116.36212
+    },
+    "product_id": {
+      "dtype": "int64",
+      "null": 0,
+      "nunique": 865,
+      "min": 0.0,
+      "max": 864.0,
+      "mean": 390.42598
+    },
+    "dt": {
+      "dtype": "datetime64[ns]",
+      "null": 0,
+      "nunique": 90,
+      "min": "2024-03-28",
+      "max": "2024-06-25",
+      "mean": null
+    },
+    "sale_amount": {
+      "dtype": "float64",
+      "null": 0,
+      "nunique": 1363,
+      "min": 0.0,
+      "max": 44.9,
+      "mean": 0.9985912860000001
+    },
+    "stock_hour6_22_cnt": {
+      "dtype": "int32",
+      "null": 0,
+      "nunique": 17,
+      "min": 0.0,
+      "max": 16.0,
+      "mean": 3.1803413333333332
+    },
+    "discount": {
+      "dtype": "float64",
+      "null": 0,
+      "nunique": 2600,
+      "min": 0.0,
+      "max": 1.088,
+      "mean": 0.9111412382339471
+    },
+    "holiday_flag": {
+      "dtype": "int32",
+      "null": 0,
+      "nunique": 2,
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.34444444444444444
+    },
+    "activity_flag": {
+      "dtype": "int32",
+      "null": 0,
+      "nunique": 2,
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.3784206666666667
+    },
+    "precpt": {
+      "dtype": "float64",
+      "null": 0,
+      "nunique": 40117,
+      "min": 0.0,
+      "max": 42.5,
+      "mean": 3.698384833777778
+    },
+    "avg_temperature": {
+      "dtype": "float64",
+      "null": 0,
+      "nunique": 1582,
+      "min": 12.06,
+      "max": 30.88,
+      "mean": 22.27910798888889
+    },
+    "avg_humidity": {
+      "dtype": "float64",
+      "null": 0,
+      "nunique": 4817,
+      "min": 27.35,
+      "max": 100.0,
+      "mean": 74.45046257333333
+    },
+    "avg_wind_level": {
+      "dtype": "float64",
+      "null": 0,
+      "nunique": 247,
+      "min": 0.97,
+      "max": 3.85,
+      "mean": 1.7245420311111108
+    }
+  },
+  "train_dates": {
+    "min": "2024-03-28 00:00:00",
+    "max": "2024-06-25 00:00:00",
+    "unique_dates": 90,
+    "calendar_days": 90,
+    "missing_days": 0,
+    "missing_sample": [],
+    "first_dates": [
+      "2024-03-28",
+      "2024-03-29",
+      "2024-03-30",
+      "2024-03-31",
+      "2024-04-01",
+      "2024-04-02",
+      "2024-04-03",
+      "2024-04-04",
+      "2024-04-05",
+      "2024-04-06"
+    ],
+    "last_dates": [
+      "2024-06-16",
+      "2024-06-17",
+      "2024-06-18",
+      "2024-06-19",
+      "2024-06-20",
+      "2024-06-21",
+      "2024-06-22",
+      "2024-06-23",
+      "2024-06-24",
+      "2024-06-25"
+    ]
+  },
+  "train_duplicates": {
+    "key_duplicate_rows": 0,
+    "key_duplicate_keys": 0,
+    "full_duplicate_rows": 0
+  },
+  "sale_amount": {
+    "count": 4500000,
+    "quantiles": {
+      "0.0": 0.0,
+      "0.001": 0.0,
+      "0.01": 0.0,
+      "0.05": 0.1,
+      "0.25": 0.4,
+      "0.5": 0.7,
+      "0.75": 1.1,
+      "0.95": 2.9,
+      "0.99": 5.8,
+      "0.999": 20.6,
+      "1.0": 44.9
+    },
+    "zero_count": 200760,
+    "zero_ratio": 0.04461333333333333,
+    "negative_count": 0,
+    "skew": 8.471775179820984
+  },
+  "store_day_total": {
+    "count": 80820.0,
+    "mean": 55.600851113585755,
+    "std": 37.052862027880614,
+    "min": 0.0,
+    "1%": 4.5,
+    "25%": 27.7,
+    "50%": 48.46,
+    "75%": 74.9325,
+    "99%": 173.91,
+    "max": 286.5
+  },
+  "hours_sale": {
+    "lengths": {
+      "24": 4500000
+    },
+    "max_abs_diff_vs_sale_amount": 1.4210854715202004e-14,
+    "rows_diff_gt_tol": 0
+  },
+  "stock": {
+    "status_values": {
+      "0": 81123596,
+      "1": 26876404
+    },
+    "sum_status_describe": {
+      "count": 4500000.0,
+      "mean": 5.972534222222222,
+      "std": 6.738754199997772,
+      "min": 0.0,
+      "50%": 4.0,
+      "90%": 16.0,
+      "99%": 24.0,
+      "max": 24.0
+    },
+    "stock_hour6_22_describe": {
+      "count": 4500000.0,
+      "mean": 3.1803413333333332,
+      "std": 4.596586115797001,
+      "min": 0.0,
+      "50%": 0.0,
+      "90%": 11.0,
+      "99%": 16.0,
+      "max": 16.0
+    },
+    "corr": 0.9337949821147634
+  },
+  "discount": {
+    "count": 4500000.0,
+    "mean": 0.9111412382339471,
+    "std": 0.12817343665229652,
+    "min": 0.0,
+    "1%": 0.504,
+    "50%": 0.989,
+    "99%": 1.0,
+    "max": 1.088
+  },
+  "flags": {
+    "holiday_flag": {
+      "0": 2950000,
+      "1": 1550000
+    },
+    "activity_flag": {
+      "0": 2797107,
+      "1": 1702893
+    }
+  },
+  "cardinality": {
+    "cities": 18,
+    "stores": 898,
+    "products": 865,
+    "cat1": 32,
+    "cat2": 84,
+    "cat3": 233,
+    "mgmt_groups": 7
+  },
+  "eval": {
+    "rows": 350000,
+    "columns": 19,
+    "date_min": "2024-06-26 00:00:00",
+    "date_max": "2024-07-02 00:00:00",
+    "unique_dates": 7,
+    "cities": 18,
+    "stores": 898,
+    "products": 865,
+    "nulls": {
+      "city_id": 0,
+      "store_id": 0,
+      "management_group_id": 0,
+      "first_category_id": 0,
+      "second_category_id": 0,
+      "third_category_id": 0,
+      "product_id": 0,
+      "dt": 0,
+      "sale_amount": 0,
+      "hours_sale": 0,
+      "stock_hour6_22_cnt": 0,
+      "hours_stock_status": 0,
+      "discount": 0,
+      "holiday_flag": 0,
+      "activity_flag": 0,
+      "precpt": 0,
+      "avg_temperature": 0,
+      "avg_humidity": 0,
+      "avg_wind_level": 0
+    },
+    "key_overlap_with_train": 0,
+    "eval_keys": 350000
+  },
+  "schema": [
+    {
+      "column": "city_id",
+      "type": "int64"
+    },
+    {
+      "column": "store_id",
+      "type": "int64"
+    },
+    {
+      "column": "management_group_id",
+      "type": "int64"
+    },
+    {
+      "column": "first_category_id",
+      "type": "int64"
+    },
+    {
+      "column": "second_category_id",
+      "type": "int64"
+    },
+    {
+      "column": "third_category_id",
+      "type": "int64"
+    },
+    {
+      "column": "product_id",
+      "type": "int64"
+    },
+    {
+      "column": "dt",
+      "type": "string"
+    },
+    {
+      "column": "sale_amount",
+      "type": "double"
+    },
+    {
+      "column": "hours_sale",
+      "type": "list<element: double>"
+    },
+    {
+      "column": "stock_hour6_22_cnt",
+      "type": "int32"
+    },
+    {
+      "column": "hours_stock_status",
+      "type": "list<element: int64>"
+    },
+    {
+      "column": "discount",
+      "type": "double"
+    },
+    {
+      "column": "holiday_flag",
+      "type": "int32"
+    },
+    {
+      "column": "activity_flag",
+      "type": "int32"
+    },
+    {
+      "column": "precpt",
+      "type": "double"
+    },
+    {
+      "column": "avg_temperature",
+      "type": "double"
+    },
+    {
+      "column": "avg_humidity",
+      "type": "double"
+    },
+    {
+      "column": "avg_wind_level",
+      "type": "double"
+    }
+  ]
+}

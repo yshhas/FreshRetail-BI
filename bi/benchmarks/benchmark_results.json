@@ -1,0 +1,113 @@
+{
+  "environment": {
+    "python": "3.13.9",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "data_version": "p1-p4-freeze-2026-11-08",
+  "period": "2024-03-28/2024-06-25",
+  "view_init_ms": 277.095,
+  "views": {
+    "v_category": 32,
+    "v_category_risk": 32,
+    "v_city": 18,
+    "v_daily": 90,
+    "v_flagged_sku": 117,
+    "v_hour": 24,
+    "v_hour_weekday": 168,
+    "v_overall": 2,
+    "v_risk_at_least": 15,
+    "v_risk_cluster": 4,
+    "v_risk_domain": 6,
+    "v_risk_exact": 16,
+    "v_risk_quadrant": 4,
+    "v_sku": 865,
+    "v_sku_pairs": 1237,
+    "v_sku_risk": 117,
+    "v_store": 898,
+    "v_store_diagnosis": 888,
+    "v_store_groups": 16,
+    "v_store_not_applicable": 10,
+    "v_store_profile": 898,
+    "v_store_sku_summary": 898
+  },
+  "iterations": 20,
+  "operations": {
+    "view_counts": {
+      "rows": 1,
+      "p50_ms": 247.038,
+      "p95_ms": 261.991,
+      "min_ms": 241.301,
+      "max_ms": 263.787
+    },
+    "overview_kpis": {
+      "rows": 898,
+      "p50_ms": 90.605,
+      "p95_ms": 98.847,
+      "min_ms": 86.862,
+      "max_ms": 114.466
+    },
+    "trend_90d": {
+      "rows": 90,
+      "p50_ms": 2.998,
+      "p95_ms": 4.479,
+      "min_ms": 2.471,
+      "max_ms": 5.379
+    },
+    "cities": {
+      "rows": 18,
+      "p50_ms": 12.333,
+      "p95_ms": 14.353,
+      "min_ms": 10.939,
+      "max_ms": 15.225
+    },
+    "stores_page50": {
+      "rows": 888,
+      "p50_ms": 123.399,
+      "p95_ms": 126.707,
+      "min_ms": 117.927,
+      "max_ms": 127.097
+    },
+    "store_detail": {
+      "rows": 1,
+      "p50_ms": 63.954,
+      "p95_ms": 68.005,
+      "min_ms": 59.822,
+      "max_ms": 68.288
+    },
+    "store_groups": {
+      "rows": 888,
+      "p50_ms": 5.02,
+      "p95_ms": 6.236,
+      "min_ms": 3.698,
+      "max_ms": 6.246
+    },
+    "products_50": {
+      "rows": 117,
+      "p50_ms": 11.974,
+      "p95_ms": 14.075,
+      "min_ms": 10.727,
+      "max_ms": 14.819
+    },
+    "risk_exact": {
+      "rows": 16,
+      "p50_ms": 4.041,
+      "p95_ms": 5.425,
+      "min_ms": 3.112,
+      "max_ms": 5.482
+    },
+    "risk_at_least": {
+      "rows": 15,
+      "p50_ms": 4.106,
+      "p95_ms": 6.103,
+      "min_ms": 3.07,
+      "max_ms": 6.456
+    },
+    "export_stores": {
+      "rows": 893,
+      "p50_ms": 138.759,
+      "p95_ms": 142.488,
+      "min_ms": 132.366,
+      "max_ms": 145.294
+    }
+  }
+}

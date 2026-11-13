@@ -1,0 +1,30 @@
+{
+  "base": "http://127.0.0.1:4173",
+  "runs": 3,
+  "pages": {
+    "overview": {
+      "wall_ms_median": 783,
+      "load_ms_median": 93.59999999403954,
+      "api_max_ms_median": 117.29999999701977,
+      "api_count": 4
+    },
+    "cities-stores": {
+      "wall_ms_median": 939,
+      "load_ms_median": 92.29999999701977,
+      "api_max_ms_median": 308.1000000014901,
+      "api_count": 5
+    },
+    "risk": {
+      "wall_ms_median": 1004,
+      "load_ms_median": 88.89999999850988,
+      "api_max_ms_median": 314.70000000298023,
+      "api_count": 5
+    },
+    "store-detail": {
+      "wall_ms_median": 707,
+      "load_ms_median": 88.5,
+      "api_max_ms_median": 71.19999999552965,
+      "api_count": 2
+    }
+  }
+}
